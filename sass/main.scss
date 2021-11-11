@@ -1,3 +1,9 @@
 /** @format */
 
-@import 'base';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/animations';
+
+@import 'layout/header';

@@ -1,0 +1,35 @@
+/** @format */
+
+.header {
+  @include center;
+
+  width: 100%;
+  padding: 10rem;
+  height: calc(100vh - 7rem);
+  background-image: url('../../img/bg_lantern.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $color-white;
+  text-shadow: 0.6rem 0.8rem 2rem #ff8400;
+  position: relative;
+  perspective: 100rem;
+
+  &__title {
+    &--main {
+      font-size: 8rem;
+      line-height: 8.5rem;
+    }
+
+    &--sub {
+      font-size: 5rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__img {
+    width: 35%;
+    animation: lantern-float 30s infinite;
+  }
+}

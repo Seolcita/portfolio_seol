@@ -10,3 +10,7 @@
   @include center;
   flex-direction: column;
 }
+
+@mixin contents-padding {
+  padding: 3rem 10%;
+}

@@ -28,14 +28,14 @@ body {
 }
 
 .main {
-  width: 75%;
+  width: 100%;
   // background-color: red;
-  margin: auto;
 }
 
 .section {
   padding: 15rem 0;
   font-family: 'Open Sans', sans-serif;
+  // background-color: yellow;
 
   &__title {
     font-size: 6rem;

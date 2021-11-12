@@ -23,8 +23,7 @@ body {
   letter-spacing: 1.5px; }
 
 .main {
-  width: 75%;
-  margin: auto; }
+  width: 100%; }
 
 .section {
   padding: 15rem 0;
@@ -190,10 +189,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: orange; }
   .about__contents {
     display: flex;
-    padding: 10rem 5rem; }
+    padding: 3rem 10%; }
     .about__contents--left {
       display: flex;
       justify-content: center;
@@ -212,3 +212,64 @@ body {
     font-size: 2rem;
     margin: 0 10rem 5rem 15rem;
     font-family: 'Open Sans', sans-serif; }
+
+/** @format */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 100%; }
+  .skills__contents {
+    padding: 3rem 10%; }
+  .skills__icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200rem; }
+  .skills img {
+    height: 15rem;
+    margin: 4rem; }
+
+.skills__icon--html {
+  width: 11.5rem; }
+
+.skills__icon--sass {
+  width: 20rem;
+  height: 10rem; }
+
+.skills__icon--node {
+  width: 20rem;
+  height: 10rem; }
+
+.skills__icon--express {
+  width: 25rem;
+  height: 10rem; }
+
+.skills__icon--mongodb {
+  width: 25rem;
+  height: 10rem; }
+
+.skills__icon--firebase {
+  width: 18rem;
+  height: 15rem; }
+
+.skills__icon--arduino {
+  width: 18rem;
+  height: 10rem;
+  padding-bottom: 13px; }
+
+.skills__icon--github {
+  width: 18rem;
+  height: 12rem; }
+
+.skills__icon--jira {
+  width: 20rem;
+  height: 11rem;
+  border-radius: 10px; }
+
+.skills__icon--pwf {
+  width: 20rem;
+  height: 12rem;
+  border-radius: 10px; }

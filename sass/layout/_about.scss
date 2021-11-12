@@ -2,11 +2,11 @@
 
 .about {
   @include center-column;
+  background-color: orange;
 
   &__contents {
     display: flex;
-    padding: 10rem 5rem;
-    // background-color: yellow;
+    @include contents-padding;
 
     &--left {
       @include center;

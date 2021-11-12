@@ -1,0 +1,33 @@
+/** @format */
+
+.about {
+  @include center-column;
+
+  &__contents {
+    display: flex;
+    padding: 10rem 5rem;
+    // background-color: yellow;
+
+    &--left {
+      @include center;
+    }
+
+    &--right {
+      @include center-column;
+    }
+  }
+
+  &__img {
+    width: 25rem;
+    height: 30rem;
+
+    clip-path: circle(44% at 50% 42%);
+    object-fit: cover;
+  }
+
+  &__texts {
+    font-size: 2rem;
+    margin: 0 10rem 5rem 15rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+}

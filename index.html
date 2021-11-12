@@ -11,12 +11,41 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <title>Seol's Portfolio</title>
   </head>
   <body class="container">
+    <!-- NAVIGATION -->
+    <button class="btn btn--open">
+      <img src="img/open_btn.png" alt="Open Button" />
+    </button>
+    <div class="nav__container">
+      <div class="nav__wrapper">
+        <button class="btn btn--close">
+          <img src="img/close_btn.png" alt="Open Button" />
+        </button>
+        <nav class="nav__list">
+          <a href="#" class="nav__link">Home</a>
+          <a href="#" class="nav__link">About</a>
+          <a href="#" class="nav__link">Skills</a>
+          <a href="#" class="nav__link">Projects</a>
+          <a href="#" class="nav__link">Testimonials</a>
+          <a href="#" class="nav__link">Hobbies</a>
+          <a href="#" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HEADER -->
     <header class="header">
       <div class="header__text">
         <h1 class="header__title--main">Hello<br />I'm Seol</h1>
@@ -24,6 +53,40 @@
       </div>
       <img src="img/lantern.png" class="header__img" alt="Header Image" />
     </header>
+
+    <main class="main">
+      <!-- ABOUT ME -->
+      <section class="about section" id="about">
+        <h2 class="section__title">Who I am</h2>
+        <div class="about__contents">
+          <div class="about__contents--left">
+            <img src="img/Seol.jpeg" alt="Seol's Photo" class="about__img" />
+          </div>
+          <div class="about__contents--right">
+            <p class="about__texts">
+              Ready to take over the world, one line of code at the time!<br /><br />
+              I approach every project with keen interest to processes and best
+              practices. My focus is delivering
+              <span class="emphasis">excellent solutions on time</span>,
+              according to the project priorities. Once a project is done, my
+              mind is always looking for ways to
+              <span class="emphasis">improve myself</span>
+              and next projects.
+            </p>
+            <div class="about__btns">
+              <a href="#" class="btn btn--medium">Resume</a>
+              <a href="#" class="btn btn--medium">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Who I am</h2>
+        <div class="about__contents"></div>
+      </section>
+    </main>
   </body>
+
   <script src="./js/script.js"></script>
 </html>

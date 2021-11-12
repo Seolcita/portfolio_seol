@@ -24,5 +24,21 @@ body {
 }
 
 .container {
-  overflow: hidden;
+  // overflow: hidden;
+}
+
+.main {
+  width: 75%;
+  // background-color: red;
+  margin: auto;
+}
+
+.section {
+  padding: 15rem 0;
+  font-family: 'Open Sans', sans-serif;
+
+  &__title {
+    font-size: 6rem;
+    padding-bottom: 5rem;
+  }
 }

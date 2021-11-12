@@ -1,5 +1,5 @@
 /** @format */
-
+/*
 @keyframes lantern-float {
   0% {
     transform: translateZ(30rem);
@@ -32,5 +32,28 @@
     transform: translateZ(-1700rem) translateY(-500rem) translateX(650rem)
       rotate(-10deg);
     opacity: 0;
+  }
+}
+*/
+
+@keyframes btn-wave {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+
+  25% {
+    transform: rotate(25deg);
+    transform-origin: top center;
+  }
+
+  75% {
+    transform: rotate(-15deg);
+    transform-origin: top center;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top center;
   }
 }

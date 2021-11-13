@@ -39,42 +39,26 @@ body {
       text-align: center; }
 
 /** @format */
-/*
 @keyframes lantern-float {
   0% {
     transform: translateZ(30rem);
-    opacity: 1;
-  }
-
+    opacity: 1; }
   20% {
     transform: translateZ(-100rem) translateY(-30rem) rotate(40deg);
-    opacity: 0.8;
-  }
-
+    opacity: 0.8; }
   50% {
     transform: translateZ(-500rem) translateY(100rem) rotate(-30deg);
-    opacity: 0.7;
-  }
-
+    opacity: 0.7; }
   70% {
-    transform: translateZ(-1200rem) translateY(-250rem) translateX(500rem)
-      rotate(30deg);
-    opacity: 0.4;
-  }
-
+    transform: translateZ(-1200rem) translateY(-250rem) translateX(500rem) rotate(30deg);
+    opacity: 0.4; }
   80% {
-    transform: translateZ(-900rem) translateY(-250rem) translateX(350rem)
-      rotate(-20deg);
-    opacity: 0.6;
-  }
-
+    transform: translateZ(-900rem) translateY(-250rem) translateX(350rem) rotate(-20deg);
+    opacity: 0.6; }
   100% {
-    transform: translateZ(-1700rem) translateY(-500rem) translateX(650rem)
-      rotate(-10deg);
-    opacity: 0;
-  }
-}
-*/
+    transform: translateZ(-1700rem) translateY(-500rem) translateX(650rem) rotate(-10deg);
+    opacity: 0; } }
+
 @keyframes btn-wave {
   0% {
     transform: rotate(0deg);
@@ -172,7 +156,7 @@ body {
   width: 100%;
   padding: 10rem;
   height: calc(100vh - 7rem);
-  background-image: url("../../img/bg_lantern.jpg");
+  background-image: url("img/bg_lantern.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +172,8 @@ body {
     font-size: 5rem;
     margin-top: 2rem; }
   .header__img {
-    width: 35%; }
+    width: 35%;
+    animation: lantern-float 190s infinite; }
 
 /** @format */
 .about {

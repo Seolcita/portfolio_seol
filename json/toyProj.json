@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Drink Water",
+    "image": "img/projects/drinkWater.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/16%20Drink%20Water/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/16%20Drink%20Water"
+  },
+  {
+    "title": "Movie App",
+    "image": "img/projects/movieApp.png",
+    "stack": ["HTML", "CSS", "Javascript", "API"],
+    "options": ["html", "css", "javascript", "js", "hcj", "hcja", "api"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/17%20Movie%20App/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/17%20Movie%20App"
+  },
+  {
+    "title": "Theme Clock",
+    "image": "img/projects/themeClock.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/19%20Theme%20Clock/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/19%20Theme%20Clock"
+  },
+  {
+    "title": "Drag N Drop",
+    "image": "img/projects/dragNdrop.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/21%20Drag%20and%20Drop/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/21%20Drag%20and%20Drop"
+  },
+  {
+    "title": "Drawing App",
+    "image": "img/projects/drawingApp.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/22%20Drawing%20App/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/22%20Drawing%20App"
+  },
+  {
+    "title": "Double Vertical Slider",
+    "image": "img/projects/doubleVerticalSlider.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/26%20Double%20Vertical%20Slider/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/26%20Double%20Vertical%20Slider"
+  },
+  {
+    "title": "Github Profile App",
+    "image": "img/projects/githubProfileApp.png",
+    "stack": ["HTML", "CSS", "Javascript", "API"],
+    "options": ["html", "css", "javascript", "js", "hcj", "hcja", "api"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/28%20Github%20Profiles/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/28%20Github%20Profiles"
+  },
+  {
+    "title": "Password Strength Background",
+    "image": "img/projects/passwordStrengthBg.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/39%20Password%20Strength%20Background/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/39%20Password%20Strength%20Background"
+  },
+  {
+    "title": "3D Background Boxes",
+    "image": "img/projects/3DBackgroundBoxes.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/40%203D%20Background%20Boxes/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/40%203D%20Background%20Boxes"
+  },
+  {
+    "title": "Live User Filter App",
+    "image": "img/projects/liveUserFilter.png",
+    "stack": ["HTML", "CSS", "Javascript", "API"],
+    "options": ["html", "css", "javascript", "js", "hcj", "hcja", "api"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/42%20Live%20User%20Filter/index.html",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/42%20Live%20User%20Filter"
+  }
+]

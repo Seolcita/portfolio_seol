@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Seolstagram",
+    "image": "img/projects/seolstagram.png",
+    "stack": ["React", "SASS", "Firebase"],
+    "options": ["react", "sass", "firebase", "rsf"],
+    "demo": "https://seolsns.web.app",
+    "github": "https://github.com/Seolcita/seolsns"
+  },
+  {
+    "title": "Babble Babble",
+    "image": "img/projects/babblebabble.png",
+    "stack": ["React", "SASS", "Firebase"],
+    "options": ["react", "sass", "firebase", "rsf"],
+    "demo": "https://covid19tracker-c1dd7.web.app/",
+    "github": "https://github.com/Seolcita/chat-app"
+  },
+  {
+    "title": "Covid19 Tracker",
+    "image": "img/projects/covid19tracker.png",
+    "stack": ["React", "SASS", "Firebase", "API"],
+    "options": ["react", "sass", "firebase", "api", "rsfa"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/17%20Movie%20App/index.html",
+    "github": "https://github.com/Seolcita/covid19tracker"
+  },
+  {
+    "title": "Study Log",
+    "image": "img/projects/studylog.png",
+    "stack": ["React", "Node", "Express", "MongoDB"],
+    "options": ["react", "node", "express", "mongoDB", "mern"],
+    "demo": "https://seolstudylog.web.app",
+    "github": "https://github.com/Seolcita/SeolStudyLog"
+  },
+  {
+    "title": "Capstone Project: E-commerce",
+    "image": "img/projects/capstone.png",
+    "stack": ["React", "Node", "Express", "MongoDB"],
+    "options": ["react", "node", "express", "mongoDB", "mern"],
+    "demo": "https://binoopayment.herokuapp.com/",
+    "github": "https://github.com/Seolcita/capstone/tree/master"
+  },
+  {
+    "title": "Catch Dude If You Can - Game",
+    "image": "img/projects/catchgame.png",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "options": ["html", "css", "javascript", "js", "hcj"],
+    "demo": "https://seolcita.github.io/50-Projects---U-/",
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/50%20Catch%20Game"
+  }
+]

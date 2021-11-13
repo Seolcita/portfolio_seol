@@ -1,10 +1,15 @@
 /** @format */
 
+// Nav Section
 const navContainer = document.querySelector('.nav__container');
 const navLinks = document.querySelectorAll('.nav__link');
 const openBtn = document.querySelector('.btn--open');
 const closeBtn = document.querySelector('.btn--close');
 
+// Contact Section
+const labels = document.querySelectorAll('.input__label');
+
+// ******** Navigation section ********
 // Nav background colors
 const colors = [
   '#F05945',
@@ -39,4 +44,16 @@ closeBtn.addEventListener('click', () => {
     link.classList.remove('change');
     link.style.transition = `transform 1s ${idx * 0.2}s`;
   });
+});
+
+// ******** Contact section ********
+// Contact Form - Label Animation
+labels.forEach((label) => {
+  label.innerHTML = label.innerText
+    .split('')
+    .map(
+      (letter, idx) =>
+        `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
+    )
+    .join('');
 });

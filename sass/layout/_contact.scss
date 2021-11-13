@@ -1,0 +1,157 @@
+/** @format */
+
+.contact {
+  background-color: pink;
+  width: 100%;
+  height: auto;
+
+  @include center-column;
+
+  &__contents {
+    width: 70%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem rgb(218, 218, 218);
+
+    @include center;
+    perspective: 100rem;
+
+    &:hover > div {
+      transform: rotateY(0);
+      transition: transform 0.7s ease-in-out;
+    }
+  }
+
+  &__left {
+    // background-color: yellow;
+    height: 45rem;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    transform: rotateY(20deg);
+    transition: transform 0.7s ease-in-out;
+  }
+
+  &__right {
+    // background-color: green;
+    height: 45rem;
+    width: 50%;
+    border-radius: 1rem;
+    transform: rotateY(-20deg);
+    transition: transform 0.7s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  &__info {
+    width: 80%;
+    margin-right: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: pink;
+    box-shadow: -2.5rem 2rem 3rem #aaa;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+
+    &--social {
+      margin-top: 3.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+  }
+
+  &__form {
+    width: 80%;
+    height: 42rem;
+    padding: 0 10%;
+    margin-left: 2rem;
+
+    box-shadow: 2.5rem 2rem 3rem #aaa;
+    border-radius: 1rem;
+
+    @include center-column;
+
+    background-color: orange;
+  }
+
+  &__btn {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background-color: white;
+  }
+}
+
+.input {
+  &__control {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  &__text {
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border: 2px solid white;
+    border-width: 0 0 2px 0;
+    font-size: 1.5rem;
+
+    &:focus {
+      outline: none;
+      border-bottom-color: lightblue;
+
+      & + label span {
+        color: lightblue;
+        transform: translateY(-30px);
+      }
+    }
+
+    &:valid {
+      outline: none;
+      border-bottom-color: lightblue;
+
+      & + label span {
+        color: lightblue;
+        transform: translateY(-30px);
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 1.5rem;
+    color: white;
+
+    span {
+      display: inline-block;
+      min-width: 5px;
+      transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+}

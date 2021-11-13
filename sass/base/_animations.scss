@@ -1,5 +1,6 @@
 /** @format */
 
+// Header Lantern Image
 @keyframes lantern-float {
   0% {
     transform: translateZ(30rem);
@@ -35,6 +36,7 @@
   }
 }
 
+// Navigation 'Close' Button
 @keyframes btn-wave {
   0% {
     transform: rotate(0deg);

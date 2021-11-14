@@ -47,9 +47,11 @@
   }
 
   &--small {
-    background: none;
+    background: transparent;
     border: 2px solid;
     font: inherit;
+    font-size: 1.2rem;
+    font-weight: border;
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
@@ -91,6 +93,21 @@
     &:hover::before {
       transform: translate(0);
     }
+  }
+
+  // Project Section - Input Buttons
+  &--search {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 3.7px;
+    right: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    transition: transform 0.3s ease;
+    border-radius: 50rem;
   }
 
   // Project Section - Search Buttons

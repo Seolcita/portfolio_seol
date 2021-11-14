@@ -1,13 +1,26 @@
 /** @format */
 
-//------------- Main Projects -----------
+// Project Search Section
+const search = document.querySelector('.search');
+const searchBox = document.querySelector('.search__box');
+const searchBtn = document.querySelector('.btn--search');
+
+// Project Main Section
 const resultMainProj = document.querySelector('.result__mainProj');
 const searchMainProj = document.querySelector('.search__mainProj');
 const checkboxesMainProjBtns = document.querySelectorAll(
-  '.checkbox__mainProj--btn'
+  // '.checkbox__mainProj--btn'
+  '.btn--mainProj'
 );
 let mainProjects = [];
 
+//------------- Search Section - Input Width -----------
+searchBox.addEventListener('click', () => {
+  search.classList.toggle('active');
+  searchBox.focus();
+});
+
+//------------- Main Projects -----------
 // Get data & display
 async function getMainProjData() {
   const res = await fetch('json/mainProj.json');

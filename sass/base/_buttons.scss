@@ -32,7 +32,8 @@
     }
   }
 
-  &__medium {
+  // Button Sizes
+  &--medium {
     margin: 2rem;
     padding: 1.5rem 6rem;
     background-color: white;
@@ -45,6 +46,17 @@
     display: inline-block;
   }
 
+  &--small {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-radius: 50rem;
+  }
+
+  // About Section
   &--toDown {
     &::before {
       @include before(
@@ -79,5 +91,18 @@
     &:hover::before {
       transform: translate(0);
     }
+  }
+
+  // Project Section - Search Buttons
+  &--orange {
+    @include btnSearch(#ffa260);
+  }
+
+  &--yellow {
+    @include btnSearch(#e4cb58);
+  }
+
+  &--green {
+    @include btnSearch(#8fc866);
   }
 }

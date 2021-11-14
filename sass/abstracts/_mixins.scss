@@ -36,3 +36,13 @@
   transform: $transform;
   transition: $transition;
 }
+
+@mixin btnSearch($col) {
+  border: 2px solid $col;
+  color: $col;
+
+  &:hover {
+    box-shadow: 0 0.5em 1em -0.3em $col;
+    transform: translateY(-0.4rem);
+  }
+}

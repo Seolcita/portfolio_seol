@@ -7,6 +7,10 @@
 
   @include center-column;
 
+  &--main {
+    @include center-column;
+  }
+
   &--toy {
     margin-top: 15rem;
 
@@ -15,12 +19,14 @@
 }
 
 .options {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 80%;
+  background-color: $color-blue-dark;
+  border-radius: 50rem;
   margin-bottom: 5rem;
   margin-top: 2rem;
+  padding: 1rem 0;
+
+  @include center;
 }
 
 .search {

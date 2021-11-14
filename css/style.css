@@ -103,7 +103,7 @@ body {
     z-index: 3; }
     .btn--close:hover {
       animation: btn-wave 3s infinite; }
-  .btn__medium {
+  .btn--medium {
     margin: 2rem;
     padding: 1.5rem 6rem;
     background-color: white;
@@ -114,6 +114,14 @@ body {
     position: relative;
     overflow: hidden;
     display: inline-block; }
+  .btn--small {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-radius: 50rem; }
   .btn--toDown::before {
     content: "Yeah~";
     position: absolute;
@@ -150,6 +158,24 @@ body {
     align-items: center; }
   .btn--toUp:hover::before {
     transform: translate(0); }
+  .btn--orange {
+    border: 2px solid #ffa260;
+    color: #ffa260; }
+    .btn--orange:hover {
+      box-shadow: 0 0.5em 1em -0.3em #ffa260;
+      transform: translateY(-0.4rem); }
+  .btn--yellow {
+    border: 2px solid #e4cb58;
+    color: #e4cb58; }
+    .btn--yellow:hover {
+      box-shadow: 0 0.5em 1em -0.3em #e4cb58;
+      transform: translateY(-0.4rem); }
+  .btn--green {
+    border: 2px solid #8fc866;
+    color: #8fc866; }
+    .btn--green:hover {
+      box-shadow: 0 0.5em 1em -0.3em #8fc866;
+      transform: translateY(-0.4rem); }
 
 /** @format */
 /** @format */
@@ -326,6 +352,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .projects--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
   .projects--toy {
     margin-top: 15rem;
     display: flex;
@@ -334,12 +365,15 @@ body {
     flex-direction: column; }
 
 .options {
-  width: 100%;
+  width: 80%;
+  background-color: #082032;
+  border-radius: 50rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 5rem;
-  margin-top: 2rem; }
+  align-items: center; }
 
 .search__toyProj {
   width: 30%;

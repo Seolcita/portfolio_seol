@@ -14,6 +14,7 @@
 
     &--right {
       @include center-column;
+      margin: 0 10rem 5rem 15rem;
     }
   }
 
@@ -27,12 +28,19 @@
 
   &__texts {
     font-size: 2rem;
-    margin: 0 10rem 5rem 15rem;
     font-family: 'Open Sans', sans-serif;
   }
 
   &__emphasis {
     color: black;
     font-weight: 700;
+  }
+
+  &__btns {
+    width: 100%;
+    height: 15rem;
+    margin-top: 5rem;
+    // padding-top: 1.3rem;
+    // overflow: hidden;
   }
 }

@@ -14,3 +14,25 @@
 @mixin contents-padding {
   padding: 3rem 10%;
 }
+
+@mixin before(
+  $content,
+  $color,
+  $bg-color,
+  $border-radius,
+  $transform,
+  $transition
+) {
+  content: $content;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $bg-color;
+  color: $color;
+  z-index: 1;
+  border-radius: $border-radius;
+  transform: $transform;
+  transition: $transition;
+}

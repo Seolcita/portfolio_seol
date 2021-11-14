@@ -1,6 +1,6 @@
 /** @format */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
 .projects {
   background-color: orange;
@@ -19,7 +19,8 @@
 }
 
 .options {
-  width: 80%;
+  width: 80rem;
+  // min-width: 80rem;
   background-color: $color-blue-dark;
   border-radius: 50rem;
   margin-bottom: 5rem;
@@ -47,26 +48,7 @@
   &.active input {
     width: 23rem;
   }
-
-  &.active button {
-    // transform: translateX(1rem);
-  }
-
-  // &__toyProj {
-  //   width: 30%;
-  //   padding: 0.5rem 2rem;
-  // }
 }
-
-// .checkbox {
-//   &__toyProj {
-//     &--btn {
-//       margin: 0 1rem;
-//       background-color: white;
-//       padding: 0.5rem 2rem;
-//     }
-//   }
-// }
 
 .result__mainProj,
 .result__toyProj {
@@ -95,6 +77,8 @@
   &--toy {
     font-size: 18px;
     font-family: 'Open Sans Condensed', sans-serif;
+    color: $color-blue-dark;
+    font-weight: 700;
   }
 }
 

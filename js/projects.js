@@ -45,8 +45,8 @@ async function getMainProjData() {
       <div class="back--toy">
         <div class="inner--toy">       
           <p class="stacks--toy">${stacks}</p>
-          <button><a href="${proj.demo}" class="proj-btn">Demo</a></button>
-          <button><a href="${proj.github}" class="proj-btn">Github</a></button>            
+          <button class="btn btn--back"><a href="${proj.demo}" target="_blank" class="proj-btn">Demo</a></button>
+          <button class="btn btn--back"><a href="${proj.github}" target="_blank" class="proj-btn">Github</a></button>            
         </div>
       </div>  
     </div>

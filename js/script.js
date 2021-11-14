@@ -10,7 +10,7 @@ const closeBtn = document.querySelector('.btn--close');
 const labels = document.querySelectorAll('.input__label');
 
 // ******** Navigation section ********
-// Nav background colors
+// Nav - background colors
 const colors = [
   '#F05945',
   '#F58634',
@@ -26,7 +26,14 @@ let i = 0;
 navLinks.forEach((link) => {
   link.style.backgroundColor = colors[i];
   i++;
+
+  link.addEventListener('click', () => navContainer.classList.remove('change'));
 });
+
+//Nav - Close nav
+// navLinks.forEach((link) => {
+
+// })
 
 // Open navigation
 openBtn.addEventListener('click', () => {

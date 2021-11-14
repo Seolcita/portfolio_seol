@@ -4,7 +4,7 @@
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&family=Shippori+Antique+B1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
 *,
 *::before,
 *::after {
@@ -190,6 +190,21 @@ body {
     .btn--green:hover {
       box-shadow: 0 0.5em 1em -0.3em #8fc866;
       transform: translateY(-0.4rem); }
+  .btn--back {
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin: 3rem 0.5rem 0 0.5rem;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem; }
+    .btn--back:hover {
+      opacity: 0.8; }
+    .btn--back:focus {
+      outline: none; }
+    .btn--back:active {
+      transform: scale(0.9); }
 
 /** @format */
 /** @format */
@@ -379,7 +394,7 @@ body {
     flex-direction: column; }
 
 .options {
-  width: 80%;
+  width: 80rem;
   background-color: #082032;
   border-radius: 50rem;
   margin-bottom: 5rem;
@@ -422,7 +437,9 @@ body {
 
 .stacks--toy {
   font-size: 18px;
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #082032;
+  font-weight: 700; }
 
 .hidden {
   display: none; }

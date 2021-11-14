@@ -76,6 +76,8 @@ checkboxesMainProjBtns.forEach((btn) => {
 
 getMainProjData();
 
+/*
+
 //------------- Toy Projects -----------
 const resultToyProj = document.querySelector('.result__toyProj');
 const searchToyProj = document.querySelector('.search__toyProj');
@@ -148,3 +150,4 @@ checkboxesToyProjBtns.forEach((btn) => {
 });
 
 getToyProjData();
+*/

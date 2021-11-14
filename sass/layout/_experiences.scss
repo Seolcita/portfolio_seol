@@ -1,7 +1,9 @@
 /** @format */
 
 .experience {
-  background-color: lightcoral;
+  background-color: #f08080;
+  background-color: $color-white;
+
   @include center-column;
 
   &__contents {
@@ -18,7 +20,7 @@
       content: '';
       width: 0.7rem;
       height: 100%;
-      background: white;
+      background: lightcoral;
       // border: 2px solid red;
       box-shadow: 0.6rem 0.8rem 0.5rem rgba(89, 89, 89, 0.5);
 
@@ -76,7 +78,7 @@
       content: '';
       width: 2.7rem;
       height: 2.7rem;
-      background: white;
+      background: lightcoral;
       position: absolute;
       top: 14.5%;
       left: -6.2rem;
@@ -87,8 +89,8 @@
     }
 
     &:hover::before {
-      border: 3px solid white;
-      background-color: crimson;
+      border: 3px solid lightcoral;
+      background-color: $color-white;
     }
   }
 }

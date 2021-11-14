@@ -1,0 +1,11 @@
+/** @format */
+
+.testimonial {
+  background-color: #ffa500;
+  height: 10rem;
+
+  @include center-column;
+
+  &__contents {
+  }
+}

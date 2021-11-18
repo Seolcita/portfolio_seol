@@ -146,4 +146,25 @@
       transform: scale(0.9);
     }
   }
+
+  // Contact Section
+  &--contact {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    transition: background-color 1s ease;
+
+    &:hover {
+      background-color: orange;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
 }

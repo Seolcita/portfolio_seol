@@ -1,15 +1,17 @@
 /** @format */
 
 .experience {
-  background-color: #f08080;
-  background-color: $color-white;
-
+  background-color: $color-black;
   @include center-column;
 
   &__contents {
     // background-color: white;
     width: 50%;
     max-width: 80rem;
+  }
+
+  &__title {
+    color: white;
   }
 
   &__timeline {
@@ -20,9 +22,10 @@
       content: '';
       width: 0.7rem;
       height: 100%;
-      background: lightcoral;
+      background: $color-white;
       // border: 2px solid red;
-      box-shadow: 0.6rem 0.8rem 0.5rem rgba(89, 89, 89, 0.5);
+      // box-shadow: 0.6rem 0.8rem 0.5rem rgba(89, 89, 89, 0.5);
+      // box-shadow: 0.3rem 0.5rem 0.5rem rgba(249, 247, 225, 0.927);
 
       position: absolute;
       top: 0;
@@ -36,16 +39,17 @@
     padding: 3rem 5rem;
     border-radius: 5px;
     position: relative;
-    color: white;
-    background-color: #444;
-    box-shadow: 1rem 1rem 0.5rem rgba(89, 89, 89, 0.5);
+    color: $color-blue-dark;
+    background-color: orange;
+    // box-shadow: 1rem 1rem 0.5rem rgba(89, 89, 89, 0.5);
+    box-shadow: 1rem 1rem 0.5rem rgba(249, 247, 225, 0.927);
 
     h2 {
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 3rem;
       font-size: 2rem;
-      border-bottom: 1px solid lightcoral;
+      border-bottom: 1px solid $color-blue-dark;
       display: inline-block;
     }
 
@@ -68,7 +72,7 @@
 
     small {
       font-size: 1.6rem;
-      background-color: lightcoral;
+      background-color: white;
       border-radius: 5rem;
       width: 33rem;
       padding: 0.5rem 0;
@@ -78,7 +82,7 @@
       content: '';
       width: 2.7rem;
       height: 2.7rem;
-      background: lightcoral;
+      background: $color-white;
       position: absolute;
       top: 14.5%;
       left: -6.2rem;
@@ -89,8 +93,8 @@
     }
 
     &:hover::before {
-      border: 3px solid lightcoral;
-      background-color: $color-white;
+      border: 3px solid $color-white;
+      background-color: orange;
     }
   }
 }

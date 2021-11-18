@@ -44,6 +44,9 @@ body {
       border-bottom: 5px double #0d0784;
       display: inline-block; }
 
+a:link, a:visited {
+  color: inherit; }
+
 /** @format */
 @keyframes lantern-float {
   0% {
@@ -205,6 +208,20 @@ body {
       outline: none; }
     .btn--back:active {
       transform: scale(0.9); }
+  .btn--contact {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    transition: background-color 1s ease; }
+    .btn--contact:hover {
+      background-color: orange; }
+    .btn--contact:active {
+      transform: scale(0.97); }
 
 /** @format */
 /** @format */
@@ -510,8 +527,7 @@ body {
 
 /** @format */
 .experience {
-  background-color: #f08080;
-  background-color: #f9f7f6;
+  background-color: #00070e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,6 +535,8 @@ body {
   .experience__contents {
     width: 50%;
     max-width: 80rem; }
+  .experience__title {
+    color: white; }
   .experience__timeline {
     width: 100%;
     position: relative; }
@@ -526,8 +544,7 @@ body {
       content: '';
       width: 0.7rem;
       height: 100%;
-      background: lightcoral;
-      box-shadow: 0.6rem 0.8rem 0.5rem rgba(89, 89, 89, 0.5);
+      background: #f9f7f6;
       position: absolute;
       top: 0;
       left: 0rem;
@@ -537,15 +554,15 @@ body {
     padding: 3rem 5rem;
     border-radius: 5px;
     position: relative;
-    color: white;
-    background-color: #444;
-    box-shadow: 1rem 1rem 0.5rem rgba(89, 89, 89, 0.5); }
+    color: #082032;
+    background-color: orange;
+    box-shadow: 1rem 1rem 0.5rem rgba(249, 247, 225, 0.927); }
     .experience__item h2 {
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 3rem;
       font-size: 2rem;
-      border-bottom: 1px solid lightcoral;
+      border-bottom: 1px solid #082032;
       display: inline-block; }
     .experience__item h3 {
       font-size: 1.9rem;
@@ -560,7 +577,7 @@ body {
       margin-top: 2rem; }
     .experience__item small {
       font-size: 1.6rem;
-      background-color: lightcoral;
+      background-color: white;
       border-radius: 5rem;
       width: 33rem;
       padding: 0.5rem 0; }
@@ -568,15 +585,15 @@ body {
       content: '';
       width: 2.7rem;
       height: 2.7rem;
-      background: lightcoral;
+      background: #f9f7f6;
       position: absolute;
       top: 14.5%;
       left: -6.2rem;
       border-radius: 50%;
       cursor: pointer; }
     .experience__item:hover::before {
-      border: 3px solid lightcoral;
-      background-color: #f9f7f6; }
+      border: 3px solid #f9f7f6;
+      background-color: orange; }
 
 /** @format */
 .testimonial {
@@ -589,7 +606,7 @@ body {
 
 /** @format */
 .contact {
-  background-color: pink;
+  background-color: #f9f7f6;
   width: 100%;
   height: auto;
   display: flex;
@@ -598,10 +615,8 @@ body {
   flex-direction: column; }
   .contact__contents {
     width: 70%;
-    background-color: white;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 1rem #dadada;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,6 +627,7 @@ body {
   .contact__left {
     height: 45rem;
     width: 50%;
+    color: #00070e;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -628,10 +644,11 @@ body {
     justify-content: left; }
   .contact__info {
     width: 80%;
+    height: 41rem;
     margin-right: 2rem;
     padding: 2rem 3rem;
     border-radius: 1rem;
-    background-color: pink;
+    background-color: orange;
     box-shadow: -2.5rem 2rem 3rem #aaa; }
   .contact__title {
     font-size: 2rem;
@@ -642,15 +659,17 @@ body {
   .contact__text {
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem; }
   .contact__icon {
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem; }
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+    fill: #ebe8e8;
+    fill: #082032; }
   .contact__form {
     width: 80%;
-    height: 42rem;
+    height: 41rem;
     padding: 0 10%;
     margin-left: 2rem;
     box-shadow: 2.5rem 2rem 3rem #aaa;
@@ -659,12 +678,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: orange; }
-  .contact__btn {
-    width: 100%;
-    margin: 2rem 0;
-    padding: 1rem 0;
-    background-color: white; }
+    background-color: #082032; }
 
 .input__control {
   position: relative;
@@ -681,15 +695,15 @@ body {
   font-size: 1.5rem; }
   .input__text:focus {
     outline: none;
-    border-bottom-color: lightblue; }
+    border-bottom-color: orange; }
     .input__text:focus + label span {
-      color: lightblue;
+      color: orange;
       transform: translateY(-30px); }
   .input__text:valid {
     outline: none;
-    border-bottom-color: lightblue; }
+    border-bottom-color: orange; }
     .input__text:valid + label span {
-      color: lightblue;
+      color: orange;
       transform: translateY(-30px); }
 
 .input__label {

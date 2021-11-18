@@ -1,7 +1,7 @@
 /** @format */
 
 .contact {
-  background-color: pink;
+  background-color: $color-white;
   width: 100%;
   height: auto;
 
@@ -9,10 +9,8 @@
 
   &__contents {
     width: 70%;
-    background-color: white;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 1rem rgb(218, 218, 218);
 
     @include center;
     perspective: 100rem;
@@ -27,6 +25,7 @@
     // background-color: yellow;
     height: 45rem;
     width: 50%;
+    color: $color-black;
 
     display: flex;
     align-items: center;
@@ -51,10 +50,11 @@
 
   &__info {
     width: 80%;
+    height: 41rem;
     margin-right: 2rem;
     padding: 2rem 3rem;
     border-radius: 1rem;
-    background-color: pink;
+    background-color: orange;
     box-shadow: -2.5rem 2rem 3rem #aaa;
   }
 
@@ -71,19 +71,21 @@
   &__text {
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   &__icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 1rem;
+    fill: $color-grey-light;
+    fill: $color-blue-dark;
   }
 
   &__form {
     width: 80%;
-    height: 42rem;
+    height: 41rem;
     padding: 0 10%;
     margin-left: 2rem;
 
@@ -92,14 +94,7 @@
 
     @include center-column;
 
-    background-color: orange;
-  }
-
-  &__btn {
-    width: 100%;
-    margin: 2rem 0;
-    padding: 1rem 0;
-    background-color: white;
+    background-color: $color-blue-dark;
   }
 }
 
@@ -121,20 +116,20 @@
 
     &:focus {
       outline: none;
-      border-bottom-color: lightblue;
+      border-bottom-color: orange;
 
       & + label span {
-        color: lightblue;
+        color: orange;
         transform: translateY(-30px);
       }
     }
 
     &:valid {
       outline: none;
-      border-bottom-color: lightblue;
+      border-bottom-color: orange;
 
       & + label span {
-        color: lightblue;
+        color: orange;
         transform: translateY(-30px);
       }
     }

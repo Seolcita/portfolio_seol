@@ -29,24 +29,24 @@ async function getMainProjData() {
   resultMainProj.innerHTML = '';
   console.log('resultMainProj', resultMainProj);
 
-  dataProjMain.forEach((proj) => {
+  dataProjMain.forEach(proj => {
     const cardProjMain = document.createElement('div');
     cardProjMain.classList.add('card');
 
     const stacks = proj.stack.join(' • ').toString();
 
     cardProjMain.innerHTML = `
-    <div class="container--toy">
-      <div class="front--toy" style="background-image: url(${proj.image})">
-        <div class="inner--toy">                 
-          <p class="name--toy">${proj.title}</p>                  
+    <div class="container--main">
+      <div class="front--main" style="background-image: url(${proj.image})">
+        <div class="inner--main">                 
+          <p class="name--main">${proj.title}</p>                  
         </div>
       </div>
-      <div class="back--toy">
-        <div class="inner--toy">       
-          <p class="stacks--toy">${stacks}</p>
-          <button class="btn btn--back"><a href="${proj.demo}" target="_blank" class="proj-btn">Demo</a></button>
-          <button class="btn btn--back"><a href="${proj.github}" target="_blank" class="proj-btn">Github</a></button>            
+      <div class="back--main">
+        <div class="inner--main">       
+          <p class="stacks--main">${stacks}</p>
+          <a href="${proj.demo}" target="_blank" class="proj-btn"><button class="btn btn--back">Demo</button></a>
+          <a href="${proj.github}" target="_blank" class="proj-btn"><button class="btn btn--back">Github</button></a>           
         </div>
       </div>  
     </div>
@@ -61,13 +61,13 @@ async function getMainProjData() {
 console.log('mainProjects', mainProjects);
 
 // Search Function
-searchMainProj.addEventListener('input', (e) =>
+searchMainProj.addEventListener('input', e =>
   filterProjDataMain(e.target.value)
 );
 
 function filterProjDataMain(searchTerm) {
   console.log('searchTerm', searchTerm);
-  mainProjects.forEach((proj) => {
+  mainProjects.forEach(proj => {
     // console.log('proj', proj);
     // if (proj.innerText.includes(searchTerm)) {
     if (proj.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -80,8 +80,8 @@ function filterProjDataMain(searchTerm) {
   });
 }
 
-checkboxesMainProjBtns.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+checkboxesMainProjBtns.forEach(btn => {
+  btn.addEventListener('click', e => {
     console.log(e.target.value);
     filterProjDataMain(e.target.value);
   });

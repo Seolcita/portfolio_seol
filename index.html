@@ -70,18 +70,18 @@
               <span class="about__emphasis"><strong>excellent solutions on time</strong></span>,
               according to the project priorities. Once a project is done, my
               mind is always looking for ways to
-              <span class="about__emphasis"><b>improve myself</b></span>
+              <span class="about__emphasis"><b class="about__texts--bold">improve myself</b></span>
               and next projects.
               <br /><br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
               molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
               numquam blanditiis harum 
-              <span class="about__emphasis"><b>consequuntur voluptatum</b></span>,
+              <span class="about__emphasis"><b about__texts--bold>consequuntur voluptatum</b></span>,
               aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
               tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
               quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
               sapiente officiis modi at sunt excepturi expe
-              <span class="about__emphasis"><b>eius sed odit</b></span>
+              <span class="about__emphasis"><b about__texts--bold>eius sed odit</b></span>
               and next projects.
             </p>
             <div class="about__btns">
@@ -157,9 +157,73 @@
       <section class="projects section" id="projects">
         <h2 class="section__title">Projects</h2>
         <div class="projects__contents">
+          <!-- Top Projects -->
+          <div class="projects--top">
+            <div class="projects__topCard">
+              <div class="projects__topCard--left">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="The Buy" class="projects__topCard--img"/>
+              </div>
+              <div class="projects__topCard--right">
+                <div class="projects__topCard--content">
+                  <!-- First Slide -->
+                  <div class="projects__topCard--entry projects__topCard--slide">
+                    <span class="projects__topCard--top"><b>Full Stack E-commerce Application</b></span>
+                    <div class="projects__topCard--info">
+                      <h2 class="projects__topCard--title">The Buy</h2>
+                      <p class="projects__topCard--desc">Shop 'The Buy' for electronics, computers, appliances and more</p>
+                    </div>
+                    <div div class="projects__topCard--btns">
+                      <a><button>Live Demo</button></a>
+                      <a><button>Github</button></a>
+                      <a href="#" class="projects__topCard--button"><button>Study Case</button></a>
+                    </div>
+                  </div>
+                  <!-- Second Slide -->
+                  <div class="projects__topCard--features projects__topCard--slide">
+                    <h3 class="projects__topCard--title--sub">Main Features</h3>
+                    <ul>
+                      <li class="projects__topCard--li"><span class="projects__topCard--dot">•</span>Authentication</li>
+                      <li class="projects__topCard--li"><span class="projects__topCard--dot">•</span>Client - Purchase products via Stripe, Edit shopping cart, View order History</li>
+                      <li class="projects__topCard--li"><span class="projects__topCard--dot">•</span>Admin - Create, Read, Update, Delete - Categories, Sub-Categories, Products, </li>
+                      <li class="projects__topCard--li"><span class="projects__topCard--dot">•</span>Responsive</li>
+                    </ul>
+                    <div div class="projects__topCard--btns">
+                      <a><button>Live Demo</button></a>
+                      <a><button>Github</button></a>
+                      <a href="#" class="projects__topCard--button"><button>Study Case</button></a>
+                    </div>
+                  </div>
+                  <!-- Third Slide -->
+                  <div class="projects__topCard--stacks projects__topCard--slide">
+                    <h3 class="projects__topCard--title--sub">Stacks</h3>
+                    <span>React</span><span class="projects__topCard--dot">•</span>
+                    <span>Node.js</span><span class="projects__topCard--dot">•</span>
+                    <span>Express.js</span><span class="projects__topCard--dot">•</span>
+                    <span>MongoDB</span><span class="projects__topCard--dot">•</span>
+                    <span>SASS</span><span class="projects__topCard--dot">•</span>
+                    <span>Firebase</span><span class="projects__topCard--dot">•</span>
+                    <span>Stripe API</span><span class="projects__topCard--dot">•</span>
+                    <span>Google API</span>
+                    <div div class="projects__topCard--btns">
+                      <a><button>Live Demo</button></a>
+                      <a><button>Github</button></a>
+                      <a href="#" class="projects__topCard--button"><button>Study Case</button></a>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <!-- Slide Buttons -->
+                <div class="projects__topCard--slide--btns">
+                  <button class="projects__topCard--slide--btn--top btn">⌃</button>
+                  <button class="projects__topCard--slide--btn--bottom btn">⌄</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Main Projects -->
+          <!-- Main Projects Search Bar -->
           <div class="projects--main">
-            <!-- <h4 class="section__title--sub">Main Projects</h4> -->
             <div class="options">
               <div class="search">
                 <input class="search__mainProj search__box" type="text" placeholder="Search..." />
@@ -194,37 +258,6 @@
             </div>
             <div class="result__mainProj"></div>
           </div>
-
-          
-          <!-- Toy Projects -->
-          <!-- <div class="projects--toy">
-            <h4 class="section__title--sub">
-              Toy Projects
-              <button class="toggle">Fold Toy Project Section</button>
-            </h4>
-            <div class="options">
-              <input class="search__toyProj" type="text" />
-              <div class="checkbox__toyProj">
-                <button
-                  id="hcj"
-                  class="btn checkbox__toyProj--btn"
-                  value="Javascript"
-                >
-                  HTML & CSS & JS
-                </button>
-                <button
-                  id="hcja"
-                  class="btn checkbox__toyProj--btn"
-                  value="API"
-                >
-                  + API
-                </button>
-              </div>
-            </div>
-            <div class="display">
-              <div class="result__toyProj"></div>
-            </div>
-          </div> -->
         </div>
       </section>
 

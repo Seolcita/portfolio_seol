@@ -11,6 +11,18 @@
   flex-direction: column;
 }
 
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @mixin contents-padding {
   padding: 3rem 10%;
 }

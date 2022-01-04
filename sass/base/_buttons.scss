@@ -60,6 +60,8 @@
 
   // About Section
   &--toDown {
+    overflow: hidden;
+
     &::before {
       @include before(
         'Yeah~',

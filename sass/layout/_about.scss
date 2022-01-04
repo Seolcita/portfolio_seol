@@ -10,6 +10,7 @@
 
     &--left {
       @include center;
+      align-items: start;
     }
 
     &--right {
@@ -29,6 +30,10 @@
   &__texts {
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
+
+    &--bold {
+      font-weight: 600;
+    }
   }
 
   &__emphasis {

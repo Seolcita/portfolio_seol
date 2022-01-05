@@ -1,18 +1,56 @@
 /** @format */
 
+// Top Project Section
+
+const slideContent = document.querySelector('.projects__topCard--content');
+const slideRight = document.querySelector('.projects__topCard--slide');
+const upBtn = document.querySelector('.up');
+const downBtn = document.querySelector('.down');
+const slideLength = slideContent.querySelectorAll(
+  '.projects__topCard--slide'
+).length;
+// const slideLeft = document.querySelector('.projects__topCard--slideImg');
+
 // Project Search Section
 const search = document.querySelector('.search');
 const searchBox = document.querySelector('.search__box');
 const searchBtn = document.querySelector('.btn--search');
 
-// Project Main Section
+// Main Project Section
 const resultMainProj = document.querySelector('.result__mainProj');
 const searchMainProj = document.querySelector('.search__mainProj');
-const checkboxesMainProjBtns = document.querySelectorAll(
-  // '.checkbox__mainProj--btn'
-  '.btn--mainProj'
-);
+const checkboxesMainProjBtns = document.querySelectorAll('.btn--mainProj');
 let mainProjects = [];
+
+//------------- Top Projects -----------
+
+let activeSlideIndex = 0;
+const slideContainerHeight = 34;
+
+upBtn.addEventListener('click', () => changeSlide('up'));
+downBtn.addEventListener('click', () => changeSlide('down'));
+
+const changeSlide = direction => {
+  if (direction === 'up') {
+    console.log(activeSlideIndex);
+    activeSlideIndex++;
+    if (activeSlideIndex > slideLength - 1) {
+      activeSlideIndex = 0;
+    }
+  } else if (direction === 'down') {
+    console.log(activeSlideIndex);
+    activeSlideIndex--;
+    if (activeSlideIndex < 0) {
+      activeSlideIndex = slideLength - 1;
+    }
+  }
+
+  const height = (slideContent.style.transform = `translateY(-${
+    activeSlideIndex * slideContainerHeight
+  }rem)`);
+
+  console.log('height**', height);
+};
 
 //------------- Search Section - Input Width -----------
 searchBox.addEventListener('click', () => {

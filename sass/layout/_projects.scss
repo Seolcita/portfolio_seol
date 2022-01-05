@@ -26,12 +26,12 @@
     @include space-between;
 
     &--left {
-      width: 30rem;
+      width: 32.5rem;
       height: 100%;
       // background-color: skyblue;
       position: absolute;
       top: 50%;
-      left: 0;
+      left: -1.5rem;
       transform: translateY(-50%);
       z-index: 1;
 
@@ -40,7 +40,8 @@
 
     &--right {
       width: 95%;
-      height: 35rem;
+      // height: 35rem;
+      height: 38rem;
       margin-left: 8rem;
       background-color: $color-blue-dark;
       border-radius: 2rem;
@@ -63,16 +64,14 @@
 
     &--slide {
       width: 100%;
-      height: 35rem;
-      background-color: crimson;
-      // position: absolute;
-      // top: 0;
-      // left: 0;
+      height: 30rem;
+      margin-bottom: 4rem;
+      // background-color: crimson;
 
       &--btns {
         position: absolute;
         top: 50%;
-        right: 2rem;
+        right: 3rem;
         transform: translateY(-50%);
 
         @include center-column;
@@ -80,21 +79,27 @@
 
       &--btn {
         &--top {
-          margin: 3rem 0;
           font-size: 4rem;
-          color: white;
         }
 
         &--bottom {
-          margin: 3rem 0;
           font-size: 5rem;
+        }
+
+        &--top,
+        &--bottom {
+          margin: 3rem 0;
           color: white;
+          &:hover {
+            color: skyblue;
+            color: crimson;
+          }
         }
       }
     }
 
     &--content {
-      background-color: cornflowerblue;
+      // background-color: cornflowerblue;
       width: 65%;
       padding: 1rem;
       color: white;
@@ -105,6 +110,9 @@
 
     &--top {
       font-size: 2.3rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid orange;
+      color: orange;
     }
 
     &--info {
@@ -116,6 +124,8 @@
 
       &--sub {
         font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        color: skyblue;
       }
     }
 
@@ -130,16 +140,50 @@
 
     &--li {
       font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-left: 1rem;
     }
 
     &--stacks {
       margin-top: 2rem;
       font-size: 1.5rem;
+
+      &--ul {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        @include center;
+        justify-content: start;
+      }
+
+      &--left,
+      &--right {
+        width: 30%;
+      }
     }
 
     &--btns {
-      margin: 2rem 0;
-      @include space-around;
+      margin: 0 2rem;
+      @include center;
+      justify-content: end;
+    }
+
+    &--button {
+      padding: 0.7rem 1.5rem;
+      margin-right: 1.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: orange;
+      color: $color-blue-dark;
+      font-size: 600;
+      transition: background-color 1s ease;
+
+      &:hover {
+        background-color: white;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
     }
   }
 

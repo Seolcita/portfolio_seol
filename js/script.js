@@ -1,15 +1,11 @@
 /** @format */
 
-// Nav Section
+// Nav Section -------------------------------------------------------
 const navContainer = document.querySelector('.nav__container');
 const navLinks = document.querySelectorAll('.nav__link');
 const openBtn = document.querySelector('.btn--open');
 const closeBtn = document.querySelector('.btn--close');
 
-// Contact Section
-const labels = document.querySelectorAll('.input__label');
-
-// ******** Navigation section ********
 // Nav - background colors
 const colors = [
   '#F05945',
@@ -23,17 +19,12 @@ const colors = [
 
 let i = 0;
 
-navLinks.forEach((link) => {
+navLinks.forEach(link => {
   link.style.backgroundColor = colors[i];
   i++;
 
   link.addEventListener('click', () => navContainer.classList.remove('change'));
 });
-
-//Nav - Close nav
-// navLinks.forEach((link) => {
-
-// })
 
 // Open navigation
 openBtn.addEventListener('click', () => {
@@ -53,9 +44,32 @@ closeBtn.addEventListener('click', () => {
   });
 });
 
-// ******** Contact section ********
+// Testimonial Section ----------------------------------------------
+const wrapper = document.querySelector('.testimonial__wrapper');
+const indicators = [
+  ...document.querySelectorAll('.testimonial__indicators button'),
+];
+const testimonialCard = [...document.querySelectorAll('.testimonial__card')];
+
+let currentTestimonial = 0;
+
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    indicators[currentTestimonial].classList.remove('active');
+    wrapper.style.marginLeft = `-${100 * i}%`;
+    // testimonialCard[i].style.opacity = '1';
+
+    indicator.classList.add('active');
+    // testimonialCard[currentTestimonial].style.opacity = '0';
+    currentTestimonial = i;
+  });
+});
+
+// Contact Section ---------------------------------------------------
+const labels = document.querySelectorAll('.input__label');
+
 // Contact Form - Label Animation
-labels.forEach((label) => {
+labels.forEach(label => {
   label.innerHTML = label.innerText
     .split('')
     .map(

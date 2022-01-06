@@ -741,11 +741,90 @@ a:link, a:visited {
 /** @format */
 .testimonial {
   background-color: #ffa500;
-  height: 10rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .testimonial__contents {
+    position: relative;
+    width: 100%;
+    min-width: 35rem;
+    min-height: 25rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    padding: 3rem 10%; }
+  .testimonial__wrapper {
+    width: 200%;
+    margin-bottom: 2rem;
+    max-height: 44rem;
+    transition: 1s;
+    display: flex;
+    background-color: red; }
+  .testimonial__card {
+    width: 100%;
+    padding: 2rem;
+    margin-right: 5rem;
+    min-height: 44rem;
+    background: #f9f7f6;
+    border-radius: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .testimonial__card--left {
+      width: 35%;
+      height: 100%;
+      margin-right: 2rem;
+      overflow: hidden;
+      border-radius: 1rem;
+      position: relative; }
+    .testimonial__card--right {
+      width: 65%;
+      min-height: 100%;
+      height: auto;
+      margin-left: 2rem;
+      padding-right: 1.5rem;
+      position: relative;
+      font-size: 1.4rem; }
+    .testimonial__card--img {
+      width: 100%;
+      border-radius: 1rem;
+      object-fit: cover; }
+    .testimonial__card--name {
+      text-align: end;
+      font-weight: 600;
+      margin-top: 2.5rem; }
+      .testimonial__card--name span {
+        padding: 0.7rem 2rem;
+        background-color: #ebe8e8;
+        border-radius: 0.5rem; }
+  .testimonial__indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    .testimonial__indicators button {
+      background: none;
+      border: none;
+      outline: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      border: 2px solid #f9f7f6;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: 0.5s; }
+      .testimonial__indicators button.active {
+        width: 4rem;
+        border-radius: 5rem;
+        background: #f9f7f6; }
 
 /** @format */
 .contact {

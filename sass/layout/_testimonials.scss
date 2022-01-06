@@ -2,10 +2,105 @@
 
 .testimonial {
   background-color: #ffa500;
-  height: 10rem;
+  height: auto;
 
   @include center-column;
 
   &__contents {
+    position: relative;
+    width: 100%;
+    min-width: 35rem;
+    min-height: 25rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+
+    @include center-column;
+    align-items: start;
+    @include contents-padding;
+  }
+
+  &__wrapper {
+    width: 200%;
+    margin-bottom: 2rem;
+    max-height: 44rem;
+    transition: 1s;
+    // @include space-between;
+    display: flex;
+    background-color: red;
+  }
+
+  &__card {
+    width: 100%;
+    padding: 2rem;
+    margin-right: 5rem;
+    min-height: 44rem;
+    background: $color-white;
+    border-radius: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: pink;
+
+    @include center;
+
+    &--left {
+      width: 35%;
+      height: 100%;
+      margin-right: 2rem;
+      overflow: hidden;
+      border-radius: 1rem;
+      position: relative;
+    }
+
+    &--right {
+      width: 65%;
+      min-height: 100%;
+      height: auto;
+      margin-left: 2rem;
+      padding-right: 1.5rem;
+      position: relative;
+      font-size: 1.4rem;
+    }
+
+    &--img {
+      width: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    &--name {
+      text-align: end;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      span {
+        padding: 0.7rem 2rem;
+        background-color: $color-grey-light;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      border: 2px solid $color-white;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: 0.5s;
+
+      &.active {
+        width: 4rem;
+        border-radius: 5rem;
+        background: $color-white;
+      }
+    }
   }
 }

@@ -13,6 +13,7 @@
   }
 
   &--main {
+    margin-top: 10rem;
     @include center-column;
   }
 
@@ -58,6 +59,8 @@
       width: 93%;
       height: 80%;
       border-radius: 2rem;
+      cursor: pointer;
+      // object-fit: contain;
     }
 
     // Right Section
@@ -193,7 +196,7 @@
 // -- Main Project Section -- START
 // Search Bar & Buttons
 .options {
-  width: 80rem;
+  width: 90rem;
   background-color: $color-blue-dark;
   border-radius: 50rem;
   margin-bottom: 5rem;
@@ -242,6 +245,12 @@
     text-align: center;
     font-family: 'Lobster', cursive;
     font-size: 40px;
+  }
+}
+
+.span {
+  &--main {
+    color: transparent;
   }
 }
 

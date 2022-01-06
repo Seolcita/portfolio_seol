@@ -180,6 +180,12 @@ a:link, a:visited {
     width: 3rem;
     transition: transform 0.3s ease;
     border-radius: 50rem; }
+  .btn--red {
+    border: 2px solid #ff7f82;
+    color: #ff7f82; }
+    .btn--red:hover {
+      box-shadow: 0 0.5em 1em -0.3em #ff7f82;
+      transform: translateY(-0.4rem); }
   .btn--orange {
     border: 2px solid #ffa260;
     color: #ffa260; }
@@ -197,6 +203,12 @@ a:link, a:visited {
     color: #8fc866; }
     .btn--green:hover {
       box-shadow: 0 0.5em 1em -0.3em #8fc866;
+      transform: translateY(-0.4rem); }
+  .btn--purple {
+    border: 2px solid #a972cb;
+    color: #a972cb; }
+    .btn--purple:hover {
+      box-shadow: 0 0.5em 1em -0.3em #a972cb;
       transform: translateY(-0.4rem); }
   .btn--back {
     margin-top: 3rem;
@@ -412,6 +424,7 @@ a:link, a:visited {
     justify-content: center;
     align-items: center; }
   .projects--main {
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,7 +464,8 @@ a:link, a:visited {
     .projects__topCard--img {
       width: 93%;
       height: 80%;
-      border-radius: 2rem; }
+      border-radius: 2rem;
+      cursor: pointer; }
     .projects__topCard--slide {
       width: 100%;
       height: 30rem;
@@ -537,7 +551,7 @@ a:link, a:visited {
         transform: scale(0.98); }
 
 .options {
-  width: 80rem;
+  width: 90rem;
   background-color: #082032;
   border-radius: 50rem;
   margin-bottom: 5rem;
@@ -577,6 +591,9 @@ a:link, a:visited {
   text-align: center;
   font-family: 'Lobster', cursive;
   font-size: 40px; }
+
+.span--main {
+  color: transparent; }
 
 .stacks--main {
   font-size: 18px;

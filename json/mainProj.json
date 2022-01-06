@@ -5,7 +5,8 @@
     "stack": ["React", "SASS", "Firebase"],
     "options": ["react", "sass", "firebase", "rsf"],
     "demo": "https://seolsns.web.app",
-    "github": "https://github.com/Seolcita/seolsns"
+    "github": "https://github.com/Seolcita/seolsns",
+    "fullstack": "full"
   },
   {
     "title": "Babble Babble",
@@ -13,7 +14,8 @@
     "stack": ["React", "SASS", "Firebase"],
     "options": ["react", "sass", "firebase", "rsf"],
     "demo": "https://covid19tracker-c1dd7.web.app/",
-    "github": "https://github.com/Seolcita/chat-app"
+    "github": "https://github.com/Seolcita/chat-app",
+    "fullstack": "full"
   },
   {
     "title": "Covid19 Tracker",
@@ -21,7 +23,8 @@
     "stack": ["React", "SASS", "Firebase", "API"],
     "options": ["react", "sass", "firebase", "api", "rsfa"],
     "demo": "https://seolcita.github.io/50-Projects---U-/17%20Movie%20App/index.html",
-    "github": "https://github.com/Seolcita/covid19tracker"
+    "github": "https://github.com/Seolcita/covid19tracker",
+    "fullstack": "no"
   },
   {
     "title": "Study Log",
@@ -29,7 +32,8 @@
     "stack": ["React", "Node", "Express", "MongoDB"],
     "options": ["react", "node", "express", "mongoDB", "mern"],
     "demo": "https://seolstudylog.web.app",
-    "github": "https://github.com/Seolcita/SeolStudyLog"
+    "github": "https://github.com/Seolcita/SeolStudyLog",
+    "fullstack": "full"
   },
   {
     "title": "Capstone Project: E-commerce",
@@ -37,7 +41,8 @@
     "stack": ["React", "Node", "Express", "MongoDB"],
     "options": ["react", "node", "express", "mongoDB", "mern"],
     "demo": "https://binoopayment.herokuapp.com/",
-    "github": "https://github.com/Seolcita/capstone/tree/master"
+    "github": "https://github.com/Seolcita/capstone/tree/master",
+    "fullstack": "full"
   },
   {
     "title": "Catch Dude If You Can - Game",
@@ -45,6 +50,7 @@
     "stack": ["HTML", "CSS", "Javascript"],
     "options": ["html", "css", "javascript", "js", "hcj"],
     "demo": "https://seolcita.github.io/50-Projects---U-/",
-    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/50%20Catch%20Game"
+    "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/50%20Catch%20Game",
+    "fullstack": "no"
   }
 ]

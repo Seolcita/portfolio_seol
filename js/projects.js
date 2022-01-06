@@ -1,7 +1,6 @@
 /** @format */
 
-// Top Project Section
-
+// Top Projects Section ----------------------------------------------
 const slideContent = document.querySelector('.projects__topCard--content');
 const slideRight = document.querySelector('.projects__topCard--slide');
 const upBtn = document.querySelector('.up');
@@ -9,21 +8,6 @@ const downBtn = document.querySelector('.down');
 const slideLength = slideContent.querySelectorAll(
   '.projects__topCard--slide'
 ).length;
-// const slideLeft = document.querySelector('.projects__topCard--slideImg');
-
-// Project Search Section
-const search = document.querySelector('.search');
-const searchBox = document.querySelector('.search__box');
-const searchBtn = document.querySelector('.btn--search');
-
-// Main Project Section
-const resultMainProj = document.querySelector('.result__mainProj');
-const searchMainProj = document.querySelector('.search__mainProj');
-const checkboxesMainProjBtns = document.querySelectorAll('.btn--mainProj');
-let mainProjects = [];
-
-//------------- Top Projects -----------
-
 let activeSlideIndex = 0;
 const slideContainerHeight = 34;
 
@@ -52,13 +36,24 @@ const changeSlide = direction => {
   console.log('height**', height);
 };
 
-//------------- Search Section - Input Width -----------
+// Project Search Section ----------------------------------------------
+
+const search = document.querySelector('.search');
+const searchBox = document.querySelector('.search__box');
+const searchBtn = document.querySelector('.btn--search');
+
+// For Input Animation
 searchBox.addEventListener('click', () => {
   search.classList.toggle('active');
   searchBox.focus();
 });
 
-//------------- Main Projects -----------
+// Main Project Section ----------------------------------------------
+const resultMainProj = document.querySelector('.result__mainProj');
+const searchMainProj = document.querySelector('.search__mainProj');
+const checkboxesMainProjBtns = document.querySelectorAll('.btn--mainProj');
+let mainProjects = [];
+
 // Get data & display
 async function getMainProjData() {
   const res = await fetch('json/mainProj.json');
@@ -77,14 +72,21 @@ async function getMainProjData() {
     <div class="container--main">
       <div class="front--main" style="background-image: url(${proj.image})">
         <div class="inner--main">                 
-          <p class="name--main">${proj.title}</p>                  
+          <p class="name--main">${proj.title}</p>
+          <span class="span--main">${
+            proj.fullstack === 'full' ? 'full' : null
+          }</span>                  
         </div>
       </div>
       <div class="back--main">
         <div class="inner--main">       
           <p class="stacks--main">${stacks}</p>
-          <a href="${proj.demo}" target="_blank" class="proj-btn"><button class="btn btn--back">Demo</button></a>
-          <a href="${proj.github}" target="_blank" class="proj-btn"><button class="btn btn--back">Github</button></a>           
+          <a href="${
+            proj.demo
+          }" target="_blank" class="proj-btn"><button class="btn btn--back">Demo</button></a>
+          <a href="${
+            proj.github
+          }" target="_blank" class="proj-btn"><button class="btn btn--back">Github</button></a>           
         </div>
       </div>  
     </div>

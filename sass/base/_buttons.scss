@@ -113,16 +113,24 @@
   }
 
   // Project Section - Search Buttons
+  &--red {
+    @include btnSearch($color-pastel-red);
+  }
+
   &--orange {
-    @include btnSearch(#ffa260);
+    @include btnSearch($color-pastel-orange);
   }
 
   &--yellow {
-    @include btnSearch(#e4cb58);
+    @include btnSearch($color-pastel-yellow);
   }
 
   &--green {
-    @include btnSearch(#8fc866);
+    @include btnSearch($color-pastel-green);
+  }
+
+  &--purple {
+    @include btnSearch($color-pastel-purple);
   }
 
   // Project Section - Card Backside Buttons

@@ -141,6 +141,10 @@
       margin: 0.5rem;
     }
 
+    &--mobile {
+      display: none;
+    }
+
     &--li {
       font-size: 1.5rem;
       line-height: 2.5rem;
@@ -347,6 +351,8 @@
 // -- Main Project Section -- END
 
 // RESPONSIVE --------------------------------------------------------
+
+// Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
   .projects {
     &__contents {
@@ -375,6 +381,87 @@
       &--content {
         width: 90%;
         padding: 1.5rem 3rem;
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .projects {
+    &__contents {
+    }
+
+    &--top {
+      margin: 2rem auto;
+      width: 100vw;
+    }
+
+    &__topCard {
+      margin-top: 20rem;
+
+      &--left {
+        width: 90.2%;
+        height: 17rem;
+        top: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-blue-dark;
+        // width: 90.1%;
+        border-radius: 2rem 2rem 0 0;
+      }
+
+      &--img {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 2rem;
+        margin-bottom: -3rem;
+      }
+
+      &--right {
+        width: 90%;
+        margin: auto;
+      }
+
+      &--top {
+        font-size: 1.7rem;
+      }
+
+      &--title {
+        &--sub {
+          font-size: 1.6rem;
+        }
+      }
+
+      &--content {
+        width: 90%;
+        padding: 1rem 0.5rem;
+      }
+
+      &--mobile {
+        display: block;
+        padding-right: 5rem;
+      }
+
+      &--li {
+        font-size: 1.5rem;
+      }
+
+      &--desktop {
+        display: none;
+      }
+
+      &--btns {
+        margin: 0 0.5rem;
+        @include center;
+        justify-content: center;
+      }
+
+      &--stacks {
+        &--left,
+        &--right {
+          width: 45%;
+        }
       }
     }
   }

@@ -6,8 +6,6 @@
   width: 100%;
   padding: 10rem;
   height: calc(100vh - 7rem);
-  // background-image: url('../../img/bg_lantern.jpg'); // For local
-  // background-image: url('img/bg_lantern.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,17 +17,16 @@
   perspective: 100rem;
 
   &__text {
-    margin-left: -15rem;
   }
 
   &__title {
     &--main {
-      font-size: 7rem;
-      line-height: 8.5rem;
+      font-size: 5rem;
+      line-height: 7.5rem;
     }
 
     &--sub {
-      font-size: 6rem;
+      font-size: 5rem;
       margin-top: 3rem;
     }
   }
@@ -37,5 +34,38 @@
   &__img {
     width: 35%;
     animation: lantern-float 190s infinite;
+  }
+}
+
+// RESPONSIVE  ----------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    max-height: 55rem;
+
+    &__title {
+      &--main {
+        font-size: 4rem;
+        line-height: 6rem;
+      }
+
+      &--sub {
+        font-size: 3.8rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    max-height: 40rem;
+    &__title {
+      &--main,
+      &--sub {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
   }
 }

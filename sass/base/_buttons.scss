@@ -5,6 +5,7 @@
   background-color: transparent;
   cursor: pointer;
   overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
 
   &:focus {
     outline: none;
@@ -34,16 +35,20 @@
 
   // Button Sizes
   &--medium {
-    margin: 2rem;
-    padding: 1.5rem 6rem;
+    margin: 1rem;
+    padding: 1rem 5rem;
     background-color: white;
-    font-size: 1.8rem;
-    font-weight: bolder;
+    font-size: 1.6rem;
+    font-weight: 500;
     color: $color-blue-dark;
     border-radius: 5rem;
     position: relative;
     overflow: hidden;
     display: inline-block;
+
+    &:active {
+      transform: scale(0.96);
+    }
   }
 
   &--small {

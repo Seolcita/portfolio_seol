@@ -2,7 +2,8 @@
 /** @format */
 /** @format */
 /** @format */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&family=Shippori+Antique+B1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&family=Shippori+Antique+B1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
 *,
@@ -23,7 +24,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 1.5px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Work Sans', sans-serif; }
 
 .main {
   width: 100%; }
@@ -90,7 +91,8 @@ a:link, a:visited {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif; }
   .btn:focus {
     outline: none; }
   .btn--open {
@@ -110,16 +112,18 @@ a:link, a:visited {
     .btn--close:hover {
       animation: btn-wave 3s infinite; }
   .btn--medium {
-    margin: 2rem;
-    padding: 1.5rem 6rem;
+    margin: 1rem;
+    padding: 1rem 5rem;
     background-color: white;
-    font-size: 1.8rem;
-    font-weight: bolder;
+    font-size: 1.6rem;
+    font-weight: 500;
     color: #082032;
     border-radius: 5rem;
     position: relative;
     overflow: hidden;
     display: inline-block; }
+    .btn--medium:active {
+      transform: scale(0.96); }
   .btn--small {
     background: transparent;
     border: 2px solid;
@@ -299,17 +303,32 @@ a:link, a:visited {
   text-shadow: 0.2rem 0.2rem 1rem black, 0.3rem 0.3rem 2rem black, 0.4rem 0.4rem 3rem black, 0.6rem 0.6rem 4rem black;
   position: relative;
   perspective: 100rem; }
-  .header__text {
-    margin-left: -15rem; }
   .header__title--main {
-    font-size: 7rem;
-    line-height: 8.5rem; }
+    font-size: 5rem;
+    line-height: 7.5rem; }
   .header__title--sub {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 3rem; }
   .header__img {
     width: 35%;
     animation: lantern-float 190s infinite; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    max-height: 55rem; }
+    .header__title--main {
+      font-size: 4rem;
+      line-height: 6rem; }
+    .header__title--sub {
+      font-size: 3.8rem;
+      margin-top: 3rem; } }
+
+@media (max-width: 767px) {
+  .header {
+    max-height: 40rem; }
+    .header__title--main, .header__title--sub {
+      font-size: 3rem;
+      line-height: 4rem; } }
 
 /** @format */
 .about {
@@ -331,7 +350,7 @@ a:link, a:visited {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 0 10rem 5rem 15rem; }
+      margin: 0 7rem 5rem 15rem; }
   .about__img {
     width: 25rem;
     height: 30rem;
@@ -339,16 +358,15 @@ a:link, a:visited {
     object-fit: cover; }
   .about__texts {
     font-size: 2rem;
-    font-family: 'Open Sans', sans-serif; }
-    .about__texts--bold {
-      font-weight: 600; }
+    font-family: 'Work Sans', sans-serif; }
   .about__emphasis {
     color: black;
-    font-weight: 700; }
+    font-weight: 600;
+    font-size: 2.2rem; }
   .about__btns {
     width: 100%;
     height: 15rem;
-    margin-top: 5rem; }
+    margin-top: 3rem; }
 
 /** @format */
 .skills {

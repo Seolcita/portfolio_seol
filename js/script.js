@@ -56,11 +56,11 @@ let currentTestimonial = 0;
 indicators.forEach((indicator, i) => {
   indicator.addEventListener('click', () => {
     indicators[currentTestimonial].classList.remove('active');
-    wrapper.style.marginLeft = `-${100 * i}%`;
-    // testimonialCard[i].style.opacity = '1';
+    // Card--wrapper width is 500%. I have 4 testimonials.
+    // 125% * 4 = 500%
+    wrapper.style.marginLeft = `-${125 * i}%`;
 
     indicator.classList.add('active');
-    // testimonialCard[currentTestimonial].style.opacity = '0';
     currentTestimonial = i;
   });
 });

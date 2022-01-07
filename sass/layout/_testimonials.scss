@@ -2,6 +2,7 @@
 
 .testimonial {
   background-color: #ffa500;
+  padding-bottom: 20rem;
   height: auto;
 
   @include center-column;
@@ -10,7 +11,6 @@
     position: relative;
     width: 100%;
     min-width: 35rem;
-    min-height: 25rem;
     padding-bottom: 5rem;
     overflow: hidden;
 
@@ -20,60 +20,70 @@
   }
 
   &__wrapper {
-    width: 200%;
+    width: 500%;
     margin-bottom: 2rem;
-    max-height: 44rem;
     transition: 1s;
-    // @include space-between;
-    display: flex;
-    background-color: red;
+    @include space-between;
+    // background-color: red;
   }
 
   &__card {
     width: 100%;
-    padding: 2rem;
-    margin-right: 5rem;
-    min-height: 44rem;
+    margin-right: 5%;
     background: $color-white;
     border-radius: 2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background-color: pink;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background-color: $color-grey-light;
 
     @include center;
 
-    &--left {
-      width: 35%;
-      height: 100%;
-      margin-right: 2rem;
-      overflow: hidden;
-      border-radius: 1rem;
+    &--top {
+      width: 100%;
+      height: auto;
       position: relative;
+
+      padding: 4rem 6rem;
+
+      @include center-column;
+
+      &.t2,
+      &.t3,
+      &.t4 {
+        padding: 5rem 15rem;
+      }
     }
 
-    &--right {
-      width: 65%;
-      min-height: 100%;
-      height: auto;
-      margin-left: 2rem;
-      padding-right: 1.5rem;
-      position: relative;
-      font-size: 1.4rem;
+    &--review {
+      width: 100%;
+      font-size: 1.7rem;
+    }
+
+    &--bottom {
+      margin-top: 4rem;
+      @include center;
     }
 
     &--img {
-      width: 100%;
-      border-radius: 1rem;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50rem;
+      border: 3px solid white;
       object-fit: cover;
+
+      &.chloe {
+        transform: scale(1.48);
+      }
     }
 
     &--name {
-      text-align: end;
       font-weight: 600;
-      margin-top: 2.5rem;
+      margin: 2rem;
+      @include center-column;
+
       span {
-        padding: 0.7rem 2rem;
-        background-color: $color-grey-light;
         border-radius: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
       }
     }
   }
@@ -91,7 +101,7 @@
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50%;
-      border: 2px solid $color-white;
+      border: 2px solid black;
       cursor: pointer;
       margin-left: 0.5rem;
       transition: 0.5s;
@@ -99,8 +109,19 @@
       &.active {
         width: 4rem;
         border-radius: 5rem;
-        background: $color-white;
+        background: black;
       }
     }
   }
+}
+
+.chloe {
+  width: 8rem;
+  height: 8rem;
+  background-color: oldlace;
+  border-radius: 50rem;
+  border: solid 4px white;
+  overflow: hidden;
+
+  @include center;
 }

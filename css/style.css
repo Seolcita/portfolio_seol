@@ -610,7 +610,7 @@ a:link, a:visited {
       .projects__topCard--stacks--left, .projects__topCard--stacks--right {
         width: 30%; }
     .projects__topCard--btns {
-      margin: 0 2rem;
+      margin: 3rem 2rem 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -746,6 +746,26 @@ a:link, a:visited {
   outline: 1px solid transparent;
   perspective: inherit;
   z-index: 2; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projects--top {
+    margin: 2rem auto;
+    width: 100vw; }
+  .projects__topCard {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .projects__topCard--left {
+      display: none; }
+    .projects__topCard--right {
+      width: 90%;
+      margin: auto; }
+    .projects__topCard--content {
+      width: 90%;
+      padding: 1.5rem 3rem; } }
 
 /** @format */
 .experience {

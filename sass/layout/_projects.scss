@@ -7,7 +7,7 @@
   @include center-column;
 
   &--top {
-    // background-color: white;
+    // background-color: crimson;
     height: 40rem;
     @include center;
   }
@@ -165,7 +165,7 @@
     }
 
     &--btns {
-      margin: 0 2rem;
+      margin: 3rem 2rem 0;
       @include center;
       justify-content: end;
     }
@@ -345,3 +345,37 @@
 }
 // Result Card - END
 // -- Main Project Section -- END
+
+// RESPONSIVE --------------------------------------------------------
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projects {
+    &__contents {
+    }
+
+    &--top {
+      // @include center;
+      margin: 2rem auto;
+      width: 100vw;
+    }
+
+    &__topCard {
+      width: 100%;
+      position: relative;
+      @include center-column;
+
+      &--left {
+        display: none;
+      }
+
+      &--right {
+        width: 90%;
+        margin: auto;
+      }
+
+      &--content {
+        width: 90%;
+        padding: 1.5rem 3rem;
+      }
+    }
+  }
+}

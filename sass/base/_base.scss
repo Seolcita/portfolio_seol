@@ -66,3 +66,22 @@ a {
 .tab {
   padding-left: 2rem;
 }
+
+// RESPONSIVE
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 0 10rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  .section {
+    padding: 4rem 0 8rem;
+  }
+}
+
+@media (max-width: 449px) {
+  .section {
+    padding: 3rem 0 5rem;
+  }
+}

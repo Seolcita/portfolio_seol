@@ -98,3 +98,36 @@
     }
   }
 }
+
+@media (min-width: 450px) and (max-width: 1024px) {
+  .experience {
+    &__contents {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 449px) {
+  .experience {
+    &__contents {
+      width: 92%;
+    }
+
+    &__timeline {
+      &::before {
+        content: '';
+        width: 0.5rem;
+        left: 0.5rem;
+      }
+    }
+
+    &__item {
+      margin: 7rem 2rem;
+      padding: 3rem;
+
+      &::before {
+        left: -3.5rem;
+      }
+    }
+  }
+}

@@ -974,6 +974,23 @@ a:link, a:visited {
       border: 3px solid #f9f7f6;
       background-color: orange; }
 
+@media (min-width: 450px) and (max-width: 1024px) {
+  .experience__contents {
+    width: 80%; } }
+
+@media (max-width: 449px) {
+  .experience__contents {
+    width: 92%; }
+  .experience__timeline::before {
+    content: '';
+    width: 0.5rem;
+    left: 0.5rem; }
+  .experience__item {
+    margin: 7rem 2rem;
+    padding: 3rem; }
+    .experience__item::before {
+      left: -3.5rem; } }
+
 /** @format */
 .testimonial {
   background-color: #ffa500;

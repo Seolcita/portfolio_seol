@@ -923,6 +923,7 @@ a:link, a:visited {
 /** @format */
 .experience {
   background-color: #00070e;
+  font-family: 'Work Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -958,13 +959,16 @@ a:link, a:visited {
       line-height: 3rem;
       font-size: 2rem;
       border-bottom: 1px solid #082032;
+      border-bottom: 1px solid #f9f7f6;
       display: inline-block; }
     .experience__item h3 {
       font-size: 1.9rem;
       margin: 1rem 0; }
     .experience__item p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       padding: 1.5rem 0; }
+    .experience__item span {
+      font-size: 3.5rem; }
     .experience__item div {
       display: flex;
       justify-content: right;

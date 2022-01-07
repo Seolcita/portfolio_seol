@@ -4,6 +4,7 @@
   background-color: $color-white;
   width: 100%;
   height: auto;
+  font-family: 'Work Sans', sans-serif;
 
   @include center-column;
 
@@ -49,7 +50,9 @@
   }
 
   &__info {
-    width: 80%;
+    // width: 80%;
+    width: 40rem;
+    min-width: 40rem;
     height: 41rem;
     margin-right: 2rem;
     padding: 2rem 3rem;
@@ -59,11 +62,11 @@
   }
 
   &__title {
-    font-size: 2rem;
-    margin: 1rem 0;
+    font-size: 2.4rem;
+    margin: 2rem 0 1rem;
 
     &--social {
-      margin-top: 3.5rem;
+      margin-top: 5rem;
       margin-bottom: 0;
     }
   }
@@ -71,20 +74,29 @@
   &__text {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 0.5rem;
+    font-weight: 400;
   }
 
   &__icon {
     width: 2.5rem;
     height: 2.5rem;
-    margin: 1rem;
-    fill: $color-grey-light;
-    fill: $color-blue-dark;
+    margin: 1rem 1.5rem;
+
+    &.sns {
+      fill: crimson;
+
+      &:hover {
+        fill: white;
+      }
+    }
   }
 
   &__form {
-    width: 80%;
+    // width: 80%;
+    width: 40rem;
+    min-width: 40rem;
     height: 41rem;
     padding: 0 10%;
     margin-left: 2rem;
@@ -147,6 +159,58 @@
       display: inline-block;
       min-width: 5px;
       transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+}
+
+// RESPONSIVE
+@media (min-width: 450px) and (max-width: 850px) {
+  .contact {
+    &__contents {
+      padding: 1rem;
+      border-radius: 1rem;
+
+      @include center-column;
+      perspective: 100rem;
+    }
+
+    &__left,
+    &__right {
+      transform: rotateY(0);
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__info,
+    &__form {
+      margin: 0;
+      box-shadow: 2.5rem 2rem 3rem #aaa;
+    }
+  }
+}
+
+@media (max-width: 449px) {
+  .contact {
+    width: 100%;
+    &__contents {
+      padding: 1rem;
+      border-radius: 1rem;
+
+      @include center-column;
+      perspective: 100rem;
+    }
+
+    &__left,
+    &__right {
+      width: 35rem;
+      transform: rotateY(0);
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__info,
+    &__form {
+      margin: 0;
     }
   }
 }

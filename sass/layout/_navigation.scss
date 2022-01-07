@@ -29,18 +29,15 @@
   &__list {
     height: 100%;
     width: 100%;
-
     display: flex;
   }
 
   &__link {
     width: 100%;
     height: 100%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: $color-white;
     opacity: 0.8;
-
     position: relative;
     transform: translateY(-100%);
 
@@ -48,11 +45,35 @@
 
     &:hover {
       opacity: 1;
-      color: black;
+      color: $color-white;
     }
 
     &.change {
       transform: translateY(0);
+    }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: 850px) {
+  .nav {
+    &__container {
+      transform: translateX(-100%);
+
+      &.change {
+        transform: translateX(0);
+      }
+    }
+
+    &__link {
+      transform: translateX(-100%);
+
+      &.change {
+        transform: translateX(0);
+      }
+    }
+    &__list {
+      @include center-column;
     }
   }
 }

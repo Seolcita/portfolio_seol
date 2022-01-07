@@ -83,5 +83,9 @@ a {
 @media (max-width: 449px) {
   .section {
     padding: 10rem 0;
+
+    &__title {
+      font-size: 4rem;
+    }
   }
 }

@@ -17,7 +17,8 @@
     @include center-column;
   }
 
-  // -- Top Project Section -- START
+  // -- Top Project Section --------------------------------------------------
+
   &__topCard {
     // background-color: pink;
     width: 100rem;
@@ -54,17 +55,14 @@
     }
 
     // Left Section
-
     &--img {
       width: 93%;
       height: 80%;
       border-radius: 2rem;
       cursor: pointer;
-      // object-fit: contain;
     }
 
     // Right Section
-
     &--slide {
       width: 100%;
       height: 30rem;
@@ -193,14 +191,14 @@
       }
     }
   }
-
-  // -- Top Project Section -- END
 }
 
-// -- Main Project Section -- START
+// -- Main Project Section --------------------------------------------------
+
 // Search Bar & Buttons
 .options {
-  width: 90rem;
+  width: 90%;
+  // width: 90rem;
   background-color: $color-blue-dark;
   border-radius: 50rem;
   margin-bottom: 5rem;
@@ -230,12 +228,13 @@
   }
 }
 
-// Result Cards - START
+// Result Cards
 .result__mainProj,
 .result__toyProj {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   max-width: 1100px;
 }
 
@@ -290,7 +289,6 @@
 
 .front--main {
   transform: rotateY(0deg);
-  // transform-style: preserve-3d;
 
   &:after {
     position: absolute;
@@ -347,17 +345,13 @@
   perspective: inherit;
   z-index: 2;
 }
-// Result Card - END
-// -- Main Project Section -- END
 
 // RESPONSIVE --------------------------------------------------------
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
   .projects {
-    &__contents {
-    }
-
+    // Top Projects Section ----------------------
     &--top {
       // @include center;
       margin: 2rem auto;
@@ -384,31 +378,40 @@
       }
     }
   }
-}
 
-// Mobile
-@media (max-width: 767px) {
-  .projects {
-    &__contents {
+  // Search Section ----------------------
+  .options {
+    width: 70%;
+    border-radius: 2rem;
+    padding: 3rem 5rem;
+
+    @include center-column;
+  }
+
+  .search {
+    position: relative;
+
+    &__box {
+      width: 15rem;
+      margin-bottom: 3rem;
     }
 
+    &.active input {
+      width: 30rem;
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  .projects {
     &--top {
       margin: 2rem auto;
       width: 100vw;
     }
 
     &__topCard {
-      margin-top: 20rem;
-
       &--left {
-        width: 90.2%;
-        height: 17rem;
-        top: -40%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: $color-blue-dark;
-        // width: 90.1%;
-        border-radius: 2rem 2rem 0 0;
+        display: none;
       }
 
       &--img {
@@ -435,7 +438,104 @@
 
       &--content {
         width: 90%;
-        padding: 1rem 0.5rem;
+        padding: 1rem 0rem;
+      }
+
+      &--mobile {
+        display: block;
+        padding-right: 5rem;
+      }
+
+      &--li {
+        font-size: 1.5rem;
+      }
+
+      &--desktop {
+        display: none;
+      }
+
+      &--btns {
+        margin: 2rem 1rem 0rem;
+        @include center;
+        justify-content: start;
+      }
+
+      &--stacks {
+        &--left,
+        &--right {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  // Search Section ----------------------
+  .options {
+    width: 70%;
+    border-radius: 2rem;
+    padding: 3rem 5rem;
+
+    @include center-column;
+  }
+
+  .search {
+    position: relative;
+
+    &__box {
+      width: 15rem;
+      margin-bottom: 3rem;
+    }
+
+    &.active input {
+      width: 30rem;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 450px) {
+  .projects {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+
+    &__topCard {
+      margin-top: 25rem;
+
+      &--left {
+        width: 35%;
+        height: 17rem;
+        top: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-blue-dark;
+        border-radius: 2rem 2rem 0 0;
+      }
+
+      &--img {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 2rem;
+        margin-bottom: -3rem;
+      }
+
+      &--right {
+        width: 35%;
+        margin: auto;
+      }
+
+      &--top {
+        font-size: 1.7rem;
+      }
+
+      &--title {
+        &--sub {
+          font-size: 1.6rem;
+        }
+      }
+
+      &--content {
+        width: 90%;
+        padding: 1rem 0rem;
       }
 
       &--mobile {
@@ -455,6 +555,10 @@
         margin: 0 0.5rem;
         @include center;
         justify-content: center;
+
+        &.mobile {
+          display: none;
+        }
       }
 
       &--stacks {
@@ -464,5 +568,36 @@
         }
       }
     }
+  }
+
+  // Search Section ----------------------
+
+  .options {
+    width: 35%;
+    margin-top: 10rem;
+    border-radius: 2rem;
+    padding: 3rem 5rem;
+    @include center-column;
+  }
+
+  .search {
+    position: relative;
+
+    &__box {
+      width: 15rem;
+      margin-bottom: 3rem;
+    }
+
+    &.active input {
+      width: 30rem;
+    }
+  }
+
+  .result__mainProj {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: center;
+    max-width: 37rem;
   }
 }

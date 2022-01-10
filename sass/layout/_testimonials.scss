@@ -4,6 +4,7 @@
   background-color: #ffa500;
   padding-bottom: 20rem;
   height: auto;
+  font-family: 'Work Sans', sans-serif;
 
   @include center-column;
 
@@ -85,6 +86,11 @@
         font-size: 1.5rem;
         line-height: 2.5rem;
       }
+
+      & > small {
+        font-size: 1.3rem;
+        letter-spacing: 0.11rem;
+      }
     }
   }
 
@@ -101,7 +107,7 @@
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50%;
-      border: 2px solid black;
+      border: 2px solid crimson;
       cursor: pointer;
       margin-left: 0.5rem;
       transition: 0.5s;
@@ -109,7 +115,7 @@
       &.active {
         width: 4rem;
         border-radius: 5rem;
-        background: black;
+        background: crimson;
       }
     }
   }
@@ -124,4 +130,18 @@
   overflow: hidden;
 
   @include center;
+}
+
+.fa-quote-left {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  color: crimson;
+  transform: rotate(15deg);
+}
+
+.fa-quote-right {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  color: crimson;
+  transform: rotate(-15deg);
 }

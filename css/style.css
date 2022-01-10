@@ -1016,6 +1016,7 @@ a:link, a:visited {
   background-color: #ffa500;
   padding-bottom: 20rem;
   height: auto;
+  font-family: 'Work Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1087,6 +1088,9 @@ a:link, a:visited {
         border-radius: 0.5rem;
         font-size: 1.5rem;
         line-height: 2.5rem; }
+      .testimonial__card--name > small {
+        font-size: 1.3rem;
+        letter-spacing: 0.11rem; }
   .testimonial__indicators {
     position: absolute;
     bottom: 0;
@@ -1099,14 +1103,14 @@ a:link, a:visited {
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50%;
-      border: 2px solid black;
+      border: 2px solid crimson;
       cursor: pointer;
       margin-left: 0.5rem;
       transition: 0.5s; }
       .testimonial__indicators button.active {
         width: 4rem;
         border-radius: 5rem;
-        background: black; }
+        background: crimson; }
 
 .chloe {
   width: 8rem;
@@ -1118,6 +1122,18 @@ a:link, a:visited {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.fa-quote-left {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  color: crimson;
+  transform: rotate(15deg); }
+
+.fa-quote-right {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  color: crimson;
+  transform: rotate(-15deg); }
 
 /** @format */
 .contact {

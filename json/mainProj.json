@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Buy: E-commerce",
+    "image": "img/projects/banner1.png",
+    "stack": ["React", "Node", "Express", "MongoDB", "SASS", "Stripe API"],
+    "options": ["react", "node", "express", "mongoDB", "mern"],
+    "demo": "http://138.197.154.7",
+    "github": "https://github.com/Seolcita/bunnybean_ecomm",
+    "fullstack": "full"
+  },
+  {
     "title": "Seolstagram",
     "image": "img/projects/seolstagram.png",
     "stack": ["React", "SASS", "Firebase"],
@@ -16,15 +25,6 @@
     "demo": "https://covid19tracker-c1dd7.web.app/",
     "github": "https://github.com/Seolcita/chat-app",
     "fullstack": "full"
-  },
-  {
-    "title": "Covid19 Tracker",
-    "image": "img/projects/covid19tracker.png",
-    "stack": ["React", "SASS", "Firebase", "API"],
-    "options": ["react", "sass", "firebase", "api", "rsfa"],
-    "demo": "https://seolcita.github.io/50-Projects---U-/17%20Movie%20App/index.html",
-    "github": "https://github.com/Seolcita/covid19tracker",
-    "fullstack": "no"
   },
   {
     "title": "Study Log",
@@ -45,7 +45,16 @@
     "fullstack": "full"
   },
   {
-    "title": "Catch Dude If You Can - Game",
+    "title": "Portfolio",
+    "image": "img/projects/portfolio.png",
+    "stack": ["HTML", "CSS", "Javascript", "SASS"],
+    "options": ["html", "css", "javascript", "js", "hcjs"],
+    "demo": "https://seolcita.github.io/portfolio_seol",
+    "github": "https://github.com/Seolcita/portfolio_seol",
+    "fullstack": "no"
+  },
+  {
+    "title": "Catch Me If You Can - Game",
     "image": "img/projects/catchgame.png",
     "stack": ["HTML", "CSS", "Javascript"],
     "options": ["html", "css", "javascript", "js", "hcj"],

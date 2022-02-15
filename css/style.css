@@ -1195,7 +1195,7 @@ a:link, a:visited {
     height: 2.5rem;
     margin: 1rem 1.5rem; }
     .contact__icon.sns {
-      fill: crimson; }
+      fill: #082032; }
       .contact__icon.sns:hover {
         fill: white; }
   .contact__form {

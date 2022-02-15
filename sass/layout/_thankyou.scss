@@ -1,0 +1,42 @@
+/** @format */
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: $color-blue-dark;
+  color: white;
+  @include center;
+}
+
+.thankyou {
+  @include center;
+
+  &__right {
+    padding: 5rem;
+
+    &--main {
+      font-size: 3rem;
+    }
+
+    &--sub {
+      font-size: 2rem;
+    }
+
+    button {
+      margin-top: 4rem;
+      margin-left: -0.5rem;
+
+      &:hover {
+        background-color: orange;
+        color: white;
+      }
+    }
+  }
+
+  &__logo {
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+}

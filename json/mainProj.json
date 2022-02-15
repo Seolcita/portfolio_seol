@@ -22,7 +22,7 @@
     "image": "img/projects/babblebabble.png",
     "stack": ["React", "SASS", "Firebase"],
     "options": ["react", "sass", "firebase", "rsf"],
-    "demo": "https://covid19tracker-c1dd7.web.app/",
+    "demo": "https://slack-app-4d66c.web.app/room/5omdIQiml6vflZ4Z4q9K",
     "github": "https://github.com/Seolcita/chat-app",
     "fullstack": "full"
   },
@@ -49,7 +49,7 @@
     "image": "img/projects/catchgame.png",
     "stack": ["HTML", "CSS", "Javascript"],
     "options": ["html", "css", "javascript", "js", "hcj"],
-    "demo": "https://seolcita.github.io/50-Projects---U-/",
+    "demo": "https://seolcita.github.io/50-Projects---U-/50%20Catch%20Game/index.html",
     "github": "https://github.com/Seolcita/50-Projects---U-/tree/master/50%20Catch%20Game",
     "fullstack": "no"
   }

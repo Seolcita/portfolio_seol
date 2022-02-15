@@ -451,7 +451,6 @@ a:link, a:visited {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
   background-color: black;
   width: 100%; }
   .skills__contents {
@@ -471,7 +470,8 @@ a:link, a:visited {
     padding-bottom: 5rem;
     font-family: 'Shippori Antique B1', sans-serif;
     margin-top: 10rem;
-    text-align: center; }
+    text-align: center;
+    font-weight: 400; }
     .skills__title--main {
       margin-top: -1rem; }
 
@@ -488,14 +488,6 @@ a:link, a:visited {
   align-items: center; }
   .skills__icon:hover {
     cursor: none; }
-  .skills__icon--jira {
-    width: 20rem;
-    height: 11rem;
-    border-radius: 10px; }
-  .skills__icon--pwf {
-    width: 20rem;
-    height: 12rem;
-    border-radius: 10px; }
 
 /** @format */
 .projects {

@@ -2,14 +2,12 @@
 
 .skills {
   @include center-column;
-  background-color: white;
   background-color: black;
 
   width: 100%;
 
   &__contents {
     @include contents-padding;
-    // max-width: 1900px;
   }
 
   &__icons {
@@ -35,6 +33,7 @@
     font-family: 'Shippori Antique B1', sans-serif;
     margin-top: 10rem;
     text-align: center;
+    font-weight: 400;
   }
 }
 
@@ -53,17 +52,5 @@
 
   &:hover {
     cursor: none;
-  }
-
-  &--jira {
-    width: 20rem;
-    height: 11rem;
-    border-radius: 10px;
-  }
-
-  &--pwf {
-    width: 20rem;
-    height: 12rem;
-    border-radius: 10px;
   }
 }

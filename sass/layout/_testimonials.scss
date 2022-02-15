@@ -107,7 +107,7 @@
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50%;
-      border: 2px solid crimson;
+      border: 2px solid $color-blue-dark;
       cursor: pointer;
       margin-left: 0.5rem;
       transition: 0.5s;
@@ -115,7 +115,7 @@
       &.active {
         width: 4rem;
         border-radius: 5rem;
-        background: crimson;
+        background: $color-blue-dark;
       }
     }
   }
@@ -144,4 +144,10 @@
   margin-left: 1rem;
   color: crimson;
   transform: rotate(-15deg);
+}
+
+@media (max-width: 767px) {
+  .testimonial {
+    display: none;
+  }
 }

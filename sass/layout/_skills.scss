@@ -3,6 +3,8 @@
 .skills {
   @include center-column;
   background-color: white;
+  background-color: black;
+
   width: 100%;
 
   &__contents {
@@ -12,59 +14,45 @@
 
   &__icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200rem;
+    max-width: 90rem;
+    margin-top: -4rem;
   }
 
   img {
-    // height: 15rem;
-    // margin: 7rem;
-
     height: 15rem;
     margin: 4rem;
+  }
+
+  &__title {
+    &--main {
+      margin-top: -1rem;
+    }
+    color: white;
+    font-size: 6rem;
+    padding-bottom: 5rem;
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin-top: 10rem;
+    text-align: center;
   }
 }
 
 .skills__icon {
-  &--html {
-    width: 11.5rem;
-  }
+  width: 15rem;
+  height: 8rem;
+  font-size: 2rem;
+  border: 5px solid;
+  font-weight: 700;
+  margin-top: 4rem;
+  font-family: 'Work Sans', sans-serif;
 
-  &--sass {
-    width: 20rem;
-    height: 10rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &--node {
-    width: 20rem;
-    height: 10rem;
-  }
-
-  &--express {
-    width: 25rem;
-    height: 10rem;
-  }
-
-  &--mongodb {
-    width: 25rem;
-    height: 10rem;
-  }
-
-  &--firebase {
-    width: 18rem;
-    height: 15rem;
-  }
-
-  &--arduino {
-    width: 18rem;
-    height: 10rem;
-    padding-bottom: 13px;
-  }
-
-  &--github {
-    width: 18rem;
-    height: 12rem;
+  &:hover {
+    cursor: none;
   }
 
   &--jira {

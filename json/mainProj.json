@@ -27,15 +27,6 @@
     "fullstack": "full"
   },
   {
-    "title": "Study Log",
-    "image": "img/projects/studylog.png",
-    "stack": ["React", "Node", "Express", "MongoDB"],
-    "options": ["react", "node", "express", "mongoDB", "mern"],
-    "demo": "https://seolstudylog.web.app",
-    "github": "https://github.com/Seolcita/SeolStudyLog",
-    "fullstack": "full"
-  },
-  {
     "title": "Capstone Project: E-commerce",
     "image": "img/projects/capstone.png",
     "stack": ["React", "Node", "Express", "MongoDB"],

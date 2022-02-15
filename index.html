@@ -18,12 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <script
@@ -63,7 +57,7 @@
     >
       <div class="header__text">
         <h1 class="header__title--main">Hello,<br />I'm Seol Hi</h1>
-        <h2 class="header__title--sub">Front-end Developer</h2>
+        <h2 class="header__title--sub">Software Developer</h2>
       </div>
       <img src="img/lantern.png" class="header__img" alt="Header Image" />
     </header>
@@ -79,8 +73,9 @@
           <div class="about__contents--right">
             <p class="about__texts">
               Ready to take over the world, one line of code at the time!<br /><br />
-              I approach every project with keen interest to processes and best
-              practices. My focus is delivering
+              I approach every
+              <span class="about__emphasis">project with keen interest</span> to
+              processes and best practices. My focus is delivering
               <span class="about__emphasis">excellent solutions on time</span>,
               according to the project priorities. Once a project is done, my
               mind is always looking for ways to
@@ -104,62 +99,66 @@
 
       <!-- Skills -->
       <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
+        <h2 class="skills__title skills__title--main">Main Skill Set</h2>
         <div class="skills__contents">
           <div class="skills__icons">
-            <img
-              class="skills__icon--html"
-              src="img/icons/html.png"
-              alt="html"
-            />
-            <img class="skills__icon--css" src="img/icons/css.png" alt="css" />
-            <img
-              class="skills__icon--react"
-              src="img/icons/JS.png"
-              alt="javascript"
-            />
-            <img
-              class="skills__icon--react"
-              src="img/icons/react.png"
-              alt="react"
-            />
-            <img
-              class="skills__icon--sass"
-              src="img/icons/sass.png"
-              alt="sass"
-            />
-            <img
-              class="skills__icon--node"
-              src="img/icons/node.png"
-              alt="node"
-            />
-            <img
-              class="skills__icon--express"
-              src="img/icons/express.png"
-              alt="express"
-            />
-            <img
-              class="skills__icon--mongodb"
-              src="img/icons/mongodb.png"
-              alt="mongodb"
-            />
-            <img
-              class="skills__icon--firebase"
-              src="img/icons/firebase.png"
-              alt="firebase"
-            />
-            <img
-              class="skills__icon--arduino"
-              src="img/icons/arduino.png"
-              alt="arduino"
-            />
-            <img
-              class="skills__icon--github"
-              src="img/icons/github.png"
-              alt="github"
-            />
+            <div class="btn btn--small btn--red btn--mainProj skills__icon">
+              HTML
+            </div>
+            <div class="btn btn--small btn--orange btn--mainProj skills__icon">
+              CSS
+            </div>
+            <div class="btn btn--small btn--yellow btn--mainProj skills__icon">
+              Sass
+            </div>
+            <div class="btn btn--small btn--green btn--mainProj skills__icon">
+              Javascript
+            </div>
+            <div class="btn btn--small btn--purple btn--mainProj skills__icon">
+              React
+            </div>
+            <div class="btn btn--small btn--purple btn--mainProj skills__icon">
+              Express.js
+            </div>
+            <div class="btn btn--small btn--green btn--mainProj skills__icon">
+              Node.js
+            </div>
+            <div class="btn btn--small btn--yellow btn--mainProj skills__icon">
+              MongoDB
+            </div>
+            <div class="btn btn--small btn--orange btn--mainProj skills__icon">
+              Firebase
+            </div>
+            <div class="btn btn--small btn--red btn--mainProj skills__icon">
+              Github
+            </div>
           </div>
           <div class="skills__text"></div>
+          <h2 class="skills__title skills__title--progress">
+            In Progress Skills
+          </h2>
+          <div class="skills__contents">
+            <div class="skills__icons">
+              <div class="btn btn--small btn--red btn--mainProj skills__icon">
+                Typescript
+              </div>
+              <div
+                class="btn btn--small btn--orange btn--mainProj skills__icon"
+              >
+                GraphQL
+              </div>
+              <div
+                class="btn btn--small btn--yellow btn--mainProj skills__icon"
+              >
+                Apollo
+              </div>
+              <div
+                class="btn btn--small btn--purple btn--mainProj skills__icon"
+              >
+                Arduino
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -319,11 +318,6 @@
                           Github
                         </button></a
                       >
-                      <!-- <a href="#"
-                        ><button class="btn projects__topCard--button">
-                          Study Case
-                        </button></a
-                      > -->
                     </div>
                   </div>
                 </div>

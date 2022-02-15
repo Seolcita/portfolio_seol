@@ -452,59 +452,50 @@ a:link, a:visited {
   align-items: center;
   flex-direction: column;
   background-color: white;
+  background-color: black;
   width: 100%; }
   .skills__contents {
     padding: 3rem 10%; }
   .skills__icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200rem; }
+    max-width: 90rem;
+    margin-top: -4rem; }
   .skills img {
     height: 15rem;
     margin: 4rem; }
+  .skills__title {
+    color: white;
+    font-size: 6rem;
+    padding-bottom: 5rem;
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin-top: 10rem;
+    text-align: center; }
+    .skills__title--main {
+      margin-top: -1rem; }
 
-.skills__icon--html {
-  width: 11.5rem; }
-
-.skills__icon--sass {
-  width: 20rem;
-  height: 10rem; }
-
-.skills__icon--node {
-  width: 20rem;
-  height: 10rem; }
-
-.skills__icon--express {
-  width: 25rem;
-  height: 10rem; }
-
-.skills__icon--mongodb {
-  width: 25rem;
-  height: 10rem; }
-
-.skills__icon--firebase {
-  width: 18rem;
-  height: 15rem; }
-
-.skills__icon--arduino {
-  width: 18rem;
-  height: 10rem;
-  padding-bottom: 13px; }
-
-.skills__icon--github {
-  width: 18rem;
-  height: 12rem; }
-
-.skills__icon--jira {
-  width: 20rem;
-  height: 11rem;
-  border-radius: 10px; }
-
-.skills__icon--pwf {
-  width: 20rem;
-  height: 12rem;
-  border-radius: 10px; }
+.skills__icon {
+  width: 15rem;
+  height: 8rem;
+  font-size: 2rem;
+  border: 5px solid;
+  font-weight: 700;
+  margin-top: 4rem;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .skills__icon:hover {
+    cursor: none; }
+  .skills__icon--jira {
+    width: 20rem;
+    height: 11rem;
+    border-radius: 10px; }
+  .skills__icon--pwf {
+    width: 20rem;
+    height: 12rem;
+    border-radius: 10px; }
 
 /** @format */
 .projects {
@@ -1103,14 +1094,14 @@ a:link, a:visited {
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50%;
-      border: 2px solid crimson;
+      border: 2px solid #082032;
       cursor: pointer;
       margin-left: 0.5rem;
       transition: 0.5s; }
       .testimonial__indicators button.active {
         width: 4rem;
         border-radius: 5rem;
-        background: crimson; }
+        background: #082032; }
 
 .chloe {
   width: 8rem;
@@ -1134,6 +1125,10 @@ a:link, a:visited {
   margin-left: 1rem;
   color: crimson;
   transform: rotate(-15deg); }
+
+@media (max-width: 767px) {
+  .testimonial {
+    display: none; } }
 
 /** @format */
 .contact {

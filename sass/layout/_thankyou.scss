@@ -1,14 +1,10 @@
 /** @format */
 
-.container {
+.thankyou {
   width: 100%;
   height: 100%;
-  background-color: $color-blue-dark;
   color: white;
-  @include center;
-}
-
-.thankyou {
+  background-color: $color-blue-dark;
   @include center;
 
   &__right {

@@ -1288,16 +1288,11 @@ a:link, a:visited {
       margin: 0; } }
 
 /** @format */
-.container {
+.thankyou {
   width: 100%;
   height: 100%;
-  background-color: #082032;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.thankyou {
+  background-color: #082032;
   display: flex;
   justify-content: center;
   align-items: center; }

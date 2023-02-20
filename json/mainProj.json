@@ -1,14 +1,5 @@
 [
   {
-    "title": "The Buy: E-commerce",
-    "image": "img/projects/banner1.png",
-    "stack": ["React", "Node", "Express", "MongoDB", "SASS", "Stripe API"],
-    "options": ["react", "node", "express", "mongoDB", "mern"],
-    "demo": "http://138.197.154.7",
-    "github": "https://github.com/Seolcita/bunnybean_ecomm",
-    "fullstack": "full"
-  },
-  {
     "title": "Seolstagram",
     "image": "img/projects/seolstagram.png",
     "stack": ["React", "SASS", "Firebase"],

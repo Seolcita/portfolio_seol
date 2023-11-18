@@ -18,15 +18,6 @@
     "fullstack": "full"
   },
   {
-    "title": "Capstone Project: E-commerce",
-    "image": "img/projects/capstone.png",
-    "stack": ["React", "Node", "Express", "MongoDB"],
-    "options": ["react", "node", "express", "mongoDB", "mern"],
-    "demo": "https://binoopayment.herokuapp.com/",
-    "github": "https://github.com/Seolcita/capstone/tree/master",
-    "fullstack": "full"
-  },
-  {
     "title": "Portfolio",
     "image": "img/projects/portfolio.png",
     "stack": ["HTML", "CSS", "Javascript", "SASS"],
